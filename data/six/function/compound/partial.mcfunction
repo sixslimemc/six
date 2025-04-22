@@ -1,24 +1,24 @@
-#> six : object/partial
+#> six : compound/partial
 #--------------------
-# -> object: obj
-# -> get: PartialObjectSpecifier
+# -> compound: compound
+# -> get? PartialCompoundSpecifier
 #--------------------
 # <- result: obj
 #--------------------
-# removes some keys from <object> according to:
+# removes some keys from <compound> according to:
 #- if <get.only> is specified, removes all other keys.
 #- if <get.without> is specified, removes those keys.
-#- if neither are specified, removes no keys, >result< is just <object>.
+#- if neither are specified, removes no keys, >result< is just <compound>.
 #--------------------
 # 1: N/A
 #--------------------
 # specifying both <get.only> and <get.without> works as expected.
-# if <get.only> is specified but empty, >result< will be an empty object ({}).
+# if <get.only> is specified but empty, >result< will be an empty compound ({}).
 #--------------------
 
 data remove storage six:out partial
 
-function six:_/impl/object/partial/main
+function six:_/impl/compound/partial/main
 
 data remove storage six:_ impl.partial
 data remove storage six:in partial

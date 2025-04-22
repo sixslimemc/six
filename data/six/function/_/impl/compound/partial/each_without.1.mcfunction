@@ -1,3 +1,3 @@
-#> six:_/impl/object/partial/each_without.1
+#> six:_/impl/compound/partial/each_without.1
 
 $data remove storage six:out partial.result.'$(this_without)'
