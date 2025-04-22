@@ -1,0 +1,6 @@
+
+{
+    const: {
+        empty_command_fill: "execute if score _ _ matches 0"
+    }
+}
