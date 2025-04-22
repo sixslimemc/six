@@ -1,0 +1,5 @@
+
+PartialObjectSpecifier := {
+    only[]? string
+    without[]? string
+}
