@@ -10,7 +10,7 @@
 #- if <get.without> is specified, removes those keys.
 #- if neither are specified, removes no keys, >result< is just <compound>.
 #--------------------
-# 1: N/A
+# 1.
 #--------------------
 # specifying both <get.only> and <get.without> works as expected.
 # if <get.only> is specified but empty, >result< will be an empty compound ({}).
