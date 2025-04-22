@@ -4,9 +4,9 @@ PartialCompoundSpecifier := {
     without[]? string
 }
 
-Lambda<N: int> := {
-    ins[N]: $storageData
+Lambda<^T, ^R> := {
+    in: $storagePath<^T>
     pre_run? $command
     command? $command
-    out: $storageData
+    out: $storagePath<^R>
 }
