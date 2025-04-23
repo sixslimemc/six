@@ -7,9 +7,9 @@
 
 scoreboard players set *x _six 0
 
-$data modify storage $(in) from storage $(from)
+$data modify storage $(in) set from storage $(from)
 $$(pre_run)
 $execute store result score *x _six run $(command)
-$data modify storage $(to) from storage $(out)
+$data modify storage $(to) set from storage $(out)
 
 return run scoreboard players get *x _six
