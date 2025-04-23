@@ -9,7 +9,7 @@
 #--------------------
 # TODO: description
 #--------------------
-# 1.
+# ..: sum of all returns by <transform> when applied to <items>
 #--------------------
 
 data remove storage six:out map
