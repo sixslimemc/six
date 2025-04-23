@@ -3,7 +3,7 @@
 #--------------------
 # -> a[]: ^T
 # -> b[]: ^T
-# -> by? lambda/Lambda<^T, any>
+# -> by? Lambda<^T, any>
 # => preserve_order? = false
 #--------------------
 # <- result[]: ^T

@@ -3,3 +3,10 @@ PartialCompoundSpecifier := {
     only[]? string
     without[]? string
 }
+
+Lambda<^T, ^R> := {
+    in: $storage<^T>
+    pre_run? $command
+    command? $command
+    out: $storage<^R>
+}
