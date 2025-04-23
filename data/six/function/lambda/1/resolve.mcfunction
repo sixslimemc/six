@@ -2,7 +2,7 @@
 #--------------------
 # -> lambda: Lambda<^T, ^R>
 # -> direct: {in: $storage<^T>, out: $storage<^R>}
-# => execute? bool = false
+# => execute: bool = false
 #--------------------
 # -> result: Lamdar<^T, ^R>
 #--------------------

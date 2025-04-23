@@ -1,4 +1,4 @@
-#> six:_/impl/set/distnict/main
+#> six:_/impl/set/distinct/main
 # ^T
 #--------------------
 # -> items[]: ^T
@@ -14,9 +14,15 @@
 
 scoreboard players set *distinct.removed _six 0
 
-data modify storage six:_ impl.distinct.items set from storage six:in distinct.items
+# set {..compares}
+execute store success score *x _six if data storage six:in distinct.by
+execute if score *x _six matches 1 run function six:_/impl/set/distinct/map_compares
+execute if score *x _six matches 0 run data modify storage six:_ impl.distinct.compares set from storage six:in distinct.items
 
-execute if data storage six:in distinct{preserve_order:true} if data storage six:_ impl.distinct.items[0] run function six:_/impl/set/distinct/each_preserve
-execute unless data storage six:in distinct{preserve_order:true} if data storage six:_ impl.distinct.items[0] run function six:_/impl/set/distinct/each
+# ASSERT: {..compares}.count {@in items}.count
+
+execute store success score *x _six if data storage six:in distinct{preserve_order:true}
+execute if score *x _six matches 1 if data storage six:in distinct.items[0] run function six:_/impl/set/distinct/each_preserve
+execute if score *x _six matches 0 if data storage six:in distinct.items[0] run function six:_/impl/set/distinct/each
 
 return run scoreboard players get *distinct.removed _six
