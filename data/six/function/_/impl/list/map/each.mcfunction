@@ -5,7 +5,7 @@
 
 data modify storage six:out map.result prepend value {}
 
-execute store result score *x _six run function lambda:-/lambdar/1/execute with storage six:_ impl.map.lambdar
+execute store result score *x _six run function lambda:-/1/execute with storage six:_ impl.map.lambdar
 scoreboard players operation *map.return _six += *x _six
 
 data remove storage six:in map.items[-1]
