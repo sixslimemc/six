@@ -3,7 +3,7 @@
 # ^ R
 #--------------------
 # -> items[]: ^T
-# -> transform: Lambda<^T, ^R>
+# -> transform: lambda/Lambda<^T, ^R>
 #--------------------
 # <- result[]: ^R
 #--------------------

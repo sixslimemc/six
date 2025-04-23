@@ -3,19 +3,3 @@ PartialCompoundSpecifier := {
     only[]? string
     without[]? string
 }
-
-Lambda<^T, ^R> := {
-    in: $storagePath<^T>
-    pre_run? $command
-    command? $command
-    out: $storagePath<^R>
-}
-
-Lambdar<^T, ^R> := {
-    pre_run: $command
-    command: command
-    in: $storage<^T>
-    out: $storage<^R>
-    from: $storage<^T>
-    to: $storage<^R>
-}

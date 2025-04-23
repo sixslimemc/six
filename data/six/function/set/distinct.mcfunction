@@ -2,7 +2,7 @@
 # ^ T
 #--------------------
 # -> items[]: ^T
-# -> by? Lambda<^T, any>
+# -> by? lambda/Lambda<^T, any>
 # => preserve_order: bool = false
 #--------------------
 # <- result[]: ^T
