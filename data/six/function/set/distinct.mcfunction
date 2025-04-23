@@ -1,5 +1,5 @@
 #> six : set/distinct
-# ^T
+# ^ T
 #--------------------
 # -> items[]: ^T
 # -> by? Lambda<^T, any>

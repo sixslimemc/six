@@ -1,12 +1,15 @@
 #> six : set/intersection
+# ^ T
 #--------------------
-# -> a[]: any
-# -> b[]: any
+# -> a[]: ^T
+# -> b[]: ^T
+# -> by? Lambda<^T, any>
 # => preserve_order? = false
 #--------------------
-# <- result[]: any
+# <- result[]: ^T
 #--------------------
 # gets the set of items in both <a> and <b>.
+# if <by> is specified, the result of <by> on each element is used to compare equality.
 # if <preserve_order>: keep the order of <a>, removing elements not in <b>.
 #--------------------
 # 0..: count of items in >result<
