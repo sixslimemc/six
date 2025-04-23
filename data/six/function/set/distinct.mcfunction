@@ -7,9 +7,9 @@
 # <- result[]: ^T
 #--------------------
 # removes duplicates from <items>, returning a set.
-# if <preserve_order> is true, preserves original order, prioritizing left-most elements.
+# if <preserve_order>: preserves <items> order, prioritizing left-most elements.
 #--------------------
-# 0..: number of duplicates removed.
+# 0..: count of duplicates removed.
 #--------------------
 
 data remove storage six:out distinct
