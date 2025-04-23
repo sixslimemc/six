@@ -1,0 +1,24 @@
+#> six : set/distinct
+# ^T
+#--------------------
+# -> items[]: ^T
+# => preserve_order: bool = false
+#--------------------
+# <- result[]: ^T
+#--------------------
+# removes duplicates from <items>, returning a set.
+# if <preserve_order> is true, preserves original order, prioritizing left-most elements.
+#--------------------
+# 0..: number of duplicates removed.
+#--------------------
+
+data remove storage six:out distinct
+
+execute store result score *x _six run function six:_/impl/set/distinct/main
+
+data remove storage six:_ impl.distinct
+data remove storage six:in distinct
+scoreboard players reset *distinct.removed _six
+scoreboard players reset *distinct.equal _six
+
+return run scoreboard players get *x _six

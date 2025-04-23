@@ -8,7 +8,7 @@
 #--------------------
 
 data modify storage six:out key_wrap.result prepend value {}
-$data modify storage six:out key_wrap.result[0].'$(key)' set from storage six:in key_wrap.list[-1]
+$data modify storage six:out key_wrap.result[0].'$(key)' set from storage six:in key_wrap.items[-1]
 
-data remove storage six:in key_wrap.list[-1]
-execute if data storage six:in key_wrap.list[0] run function six:_/impl/list/key_wrap/each with storage six:in key_wrap
+data remove storage six:in key_wrap.items[-1]
+execute if data storage six:in key_wrap.items[0] run function six:_/impl/list/key_wrap/each with storage six:in key_wrap

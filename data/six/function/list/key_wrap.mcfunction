@@ -1,7 +1,7 @@
 #> six : list/key_wrap
 # ^ T
 #--------------------
-# -> list[]: ^T
+# -> items[]: ^T
 # -> key: string
 #--------------------
 # <- result[]: {<key>: ^T}

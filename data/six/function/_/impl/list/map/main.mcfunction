@@ -12,7 +12,7 @@
 # 1.
 #--------------------
 
-data modify storage six:_ impl.map.list set from storage six:in map.list
+data modify storage six:_ impl.map.list set from storage six:in map.items
 
 data modify storage six:_ impl.map.macro set from storage six:in map.transform
 data modify storage six:_ impl.map.macro.in_loc set from storage six:in map.transform.in
