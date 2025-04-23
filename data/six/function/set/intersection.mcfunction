@@ -9,7 +9,7 @@
 # <- result[]: ^T
 #--------------------
 # gets the set of items in both <a> and <b>.
-# if <by> is specified, the result of <by> on each element is used to compare equality.
+# if <by> is specified, uses the result of <by> on each element to compare equality.
 # if <preserve_order>: keep the order of <a>, removing elements not in <b>.
 #--------------------
 # 0..: count of items in >result<
