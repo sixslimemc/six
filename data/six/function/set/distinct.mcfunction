@@ -3,13 +3,13 @@
 #--------------------
 # -> items[]: ^T
 # -> by? Lambda<^T, any>
-# => preserve_order: bool = false
+# => ordered: bool = false
 #--------------------
 # <- result[]: ^T
 #--------------------
 # removes duplicates from <items>, returning a set.
 # if <by> is specified, uses the result of <by> on each element to compare equality.
-# if <preserve_order>: preserves <items> order, prioritizing left-most elements.
+# if <ordered>: preserves <items> order, prioritizing left-most elements.
 #--------------------
 # 0..: count of duplicates removed.
 #--------------------

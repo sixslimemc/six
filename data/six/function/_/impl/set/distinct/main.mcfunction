@@ -2,12 +2,12 @@
 # ^T
 #--------------------
 # -> items[]: ^T
-# => preserve_order: bool = false
+# => ordered: bool = false
 #--------------------
 # <- result[]: ^T
 #--------------------
 # removes duplicates from <items>, returning a set.
-# if <preserve_order> is true, preserves original order, prioritizing left-most elements.
+# if <ordered> is true, preserves original order, prioritizing left-most elements.
 #--------------------
 # 0..: number of duplicates removed.
 #--------------------
@@ -21,7 +21,7 @@ execute if score *x _six matches 0 run data modify storage six:_ impl.distinct.c
 
 # ASSERT: {..compares}.count {@in items}.count
 
-execute store success score *x _six if data storage six:in distinct{preserve_order:true}
+execute store success score *x _six if data storage six:in distinct{ordered:true}
 execute if score *x _six matches 1 if data storage six:in distinct.items[0] run function six:_/impl/set/distinct/each_preserve
 execute if score *x _six matches 0 if data storage six:in distinct.items[0] run function six:_/impl/set/distinct/each
 

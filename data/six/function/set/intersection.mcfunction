@@ -5,7 +5,7 @@
 # -> a[]: ^A
 # -> b[]: ^B
 # -> by? Lambda<^A | ^B, any>
-# => preserve_order? = false
+# => ordered? = false
 #--------------------
 # <- a[]: ^A
 # <- b[]: ^B
@@ -13,7 +13,7 @@
 # gets the set of elements contained in both <a> and <b>.
 # if <by> is specified, uses the result of <by> on each element to compare equality.
 #- >a< and >b< contain the original elements from their respective input set.
-# if <preserve_order>: preserves original order, prioritizing left-most elements.
+# if <ordered>: preserves original order, prioritizing left-most elements.
 #--------------------
 # 0..: count of items in >result<
 #--------------------
