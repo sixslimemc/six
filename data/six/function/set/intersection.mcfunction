@@ -1,20 +1,25 @@
 #> six : set/intersection
-# ^ T
+# ^ A
+# ^ B
 #--------------------
-# -> a[]: ^T
-# -> b[]: ^T
-# -> by? Lambda<^T, any>
+# -> a[]: ^A
+# -> b[]: ^B
+# -> by? Lambda<^A | ^B, any>
 # => preserve_order? = false
 #--------------------
-# <- result[]: ^T
+# <- a[]: ^A
+# <- b[]: ^B
 #--------------------
-# gets the set of items in both <a> and <b>.
+# gets the set of elements contained in both <a> and <b>.
 # if <by> is specified, uses the result of <by> on each element to compare equality.
-# if <preserve_order>: keep the order of <a>, removing elements not in <b>.
+#- >a< and >b< contain the original elements from their respective input set.
+# if <preserve_order>: preserves original order, prioritizing left-most elements.
 #--------------------
 # 0..: count of items in >result<
 #--------------------
-
+# if <by> is unspecified (direct equality comparison), >a< and >b< will be identical.
+# best performance is achieved if the length of <a> is <= to the length of <b>.
+#--------------------
 data remove storage six:out intersection
 
 execute store result score *x _six run function six:_/impl/set/intersection/main

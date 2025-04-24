@@ -3,7 +3,7 @@
 # ^ R
 #--------------------
 # -> items[]: ^T
-# -> transform: Lambda<^T, ^R>
+# -> transform? Lambda<^T, ^R>
 #--------------------
 # <- result[]: ^R
 #--------------------
@@ -11,12 +11,17 @@
 #--------------------
 # ..: sum of all returns by <transform> when applied to <items>
 #--------------------
+# if <transform> is unspecified, >result< is directly set to <items>
+#--------------------
 
 data remove storage six:out map
 
-function six:_/impl/list/map/main
+execute store success score *y _six if data storage six:in map.transform
+execute if score *y _six matches 0 run data modify storage six:out map.result set from storage six:in map.items
+execute if score *y _six matches 0 run scoreboard players set *x _six 0
+execute if score *y _six matches 1 store result score *x _six run function six:_/impl/list/map/main
 
 data remove storage six:_ impl.map
 data remove storage six:in map
 
-return 1
+return run scoreboard players get *x _six

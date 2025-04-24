@@ -1,10 +1,6 @@
-#> six:_/impl/list/key_wrap/main
-# ^ T
+#> six:_/impl/list/key_wrap/each
 #--------------------
-# -> list[]: ^T
-# -> key: string
-#--------------------
-# <- result[]: {<key>: ^T}
+# ./main
 #--------------------
 
 data modify storage six:out key_wrap.result prepend value {}
