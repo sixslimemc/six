@@ -2,9 +2,9 @@
 # ^ T
 #--------------------
 # -> items[]: ^T
-# -> key? {index: string = 'index', value: string = 'value'}
+# DEV: <key> is a bad idea
 #--------------------
-# <- result[]: {index: int, value: ^T}
+# <- result[]: { index: int, value: ^T}
 #--------------------
 # TODO: description
 #--------------------
