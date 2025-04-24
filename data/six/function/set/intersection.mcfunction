@@ -24,7 +24,7 @@ data remove storage six:out intersection
 
 execute store result score *x _six run function six:_/impl/set/intersection/main
 
-data remove storage six:_ impl.intersection
+data remove storage six:_ v.intersection
 data remove storage six:in intersection
 scoreboard players reset *intersection.count _six
 

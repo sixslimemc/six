@@ -17,7 +17,7 @@ data remove storage six:out key_wrap
 
 function six:_/impl/list/key_wrap/main
 
-data remove storage six:_ impl.key_wrap
+data remove storage six:_ v.key_wrap
 data remove storage six:in key_wrap
 
 return 1

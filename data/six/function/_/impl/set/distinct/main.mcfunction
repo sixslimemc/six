@@ -17,7 +17,7 @@ scoreboard players set *distinct.removed _six 0
 # set {..compares}
 execute store success score *x _six if data storage six:in distinct.by
 execute if score *x _six matches 1 run function six:_/impl/set/distinct/map_compares
-execute if score *x _six matches 0 run data modify storage six:_ impl.distinct.compares set from storage six:in distinct.items
+execute if score *x _six matches 0 run data modify storage six:_ v.distinct.compares set from storage six:in distinct.items
 
 # ASSERT: {..compares}.count {@in items}.count
 

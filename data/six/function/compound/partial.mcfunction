@@ -20,7 +20,7 @@ data remove storage six:out partial
 
 function six:_/impl/compound/partial/main
 
-data remove storage six:_ impl.partial
+data remove storage six:_ v.partial
 data remove storage six:in partial
 
 return 1
