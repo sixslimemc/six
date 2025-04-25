@@ -13,19 +13,20 @@
 # gets the set of elements contained in both <a> and <b>.
 # if <by> is specified, uses the result of <by> on each element to compare equality.
 #- >a< and >b< contain the original elements from their respective input set.
+#-- (thus their length will be equal.)
 # if <ordered>: preserves original order, prioritizing left-most elements.
 #--------------------
-# 0..: count of items in >result<
+# 1.
 #--------------------
 # if <by> is unspecified (direct equality comparison), >a< and >b< will be identical.
 # best performance is achieved if the length of <a> is <= to the length of <b>.
 #--------------------
-data remove storage six:out intersection
 
-execute store result score *x _six run function six:_/impl/set/intersection/main
+data merge storage six:out {intersection:{a:[], b:[]}}
+
+function six:_/impl/set/intersection/main
 
 data remove storage six:_ v.intersection
 data remove storage six:in intersection
-scoreboard players reset *intersection.count _six
 
-return run scoreboard players get *x _six
+return 1

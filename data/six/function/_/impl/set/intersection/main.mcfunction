@@ -7,10 +7,10 @@
 #--------------------
 # # TODO: description
 #--------------------
-# 0..: count of items in >result<
+# 1.
 #--------------------
 
-scoreboard players set *intersection.count _six 0
+data merge storage six:out {intersection:{a:[], b:[]}}
 
 # goto preserved branch:
 execute if data storage six:in intersection{ordered:true} run return run function six:_/impl/set/intersection/ordered/do
@@ -20,7 +20,7 @@ execute unless data storage six:in intersection.by run return run function six:_
 
 # <ordered> == false, <by> specified branch :
 
-# resolve b_comp lambda:
+# resolve {..b_comp} lambda:
 data merge storage lambda:in {resolve:{direct:{in:'six:in intersection.b[-1]', out:'six:_ v.intersection.b_comp[-1].compare'}}}
 data modify storage lambda:in resolve.lambda set from storage six:in intersection.by
 function lambda:1/resolve
@@ -29,9 +29,11 @@ data modify storage six:_ v.intersection.b_compgen set from storage lambda:out r
 # generate {..b_comp}
 execute if data storage six:in intersection.b[0] run function six:_/impl/set/intersection/gen_b_comp
 
-# resolve {..a_compare} lambda
-data merge storage lambda:in {resolve:{direct:{in:'six:in intersection.this_a', out:'six:_ v.intersection.a_compare'}}}
+# resolve {..a_compare} lambda:
+data merge storage lambda:in {resolve:{direct:{in:'six:in intersection.a[-1]', out:'six:_ v.intersection.a_compare'}}}
 data modify storage lambda:in resolve.lambda set from storage six:in intersection.by
 function lambda:1/resolve
+data modify storage six:_ v.intersection.a_comparegen set from storage lambda:out resolve.result
 
 # each a:
+execute if data storage six:in intersection.a[0] run function six:_/impl/set/intersection/each
