@@ -19,7 +19,7 @@ execute store success score *x _six if data storage six:in distinct.by
 execute if score *x _six matches 1 run function six:_/impl/set/distinct/map_compares
 execute if score *x _six matches 0 run data modify storage six:_ v.distinct.compares set from storage six:in distinct.items
 
-# ASSERT: {..compares}.count {@in items}.count
+# ASSERT: {..compares}.count == <items>.count
 
 execute store success score *x _six if data storage six:in distinct{ordered:true}
 execute if score *x _six matches 1 if data storage six:in distinct.items[0] run function six:_/impl/set/distinct/each_preserve

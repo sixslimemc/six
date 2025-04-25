@@ -4,7 +4,7 @@
 #--------------------
 
 data modify storage six:_ v.distinct.this_item set from storage six:in distinct.items[0]
-data modify storage six:_ v.distinct.this_compare set from storage six:_ v.distinct.compares[0]
+data modify storage six:_ v.distinct.this_compare.value set from storage six:_ v.distinct.compares[0]
 
 execute store result score *x _six run function six:_/impl/set/distinct/check_seen with storage six:_ v.distinct
 

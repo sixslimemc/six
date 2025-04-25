@@ -5,7 +5,8 @@
 #--------------------
 
 data merge storage six:_ {impl:{distinct:{matches:[]}}}
-$data modify storage six:_ v.distinct.matches append from storage six:_ v.distinct.seen[{value:$(this_compare)}].value
+
+$data modify storage six:_ v.distinct.matches append from storage six:_ v.distinct.seen[$(this_compare)]
 
 execute unless data storage six:_ v.distinct.matches[0] run return 0
 
