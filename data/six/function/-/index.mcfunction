@@ -1,9 +1,9 @@
-#> six:_/macro/index
+#> six :-/ index
 #--------------------
-# $> from: $storage<[]any>
+# $> items: $storage<[]any>
 # $> to: $storage<any>
 # $> index: any
-# $> op: 'set' | 'append'
+# $> op: 'set' | 'append' | 'prepend'
 #--------------------
 
-$data modify storage $(to) $(op) from storage $(from)[$(index)]
+$data modify storage $(to) $(op) from storage $(items)[$(index)]
