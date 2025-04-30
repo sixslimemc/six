@@ -17,7 +17,7 @@ execute if data storage six:in intersection.b[0] run function six:_/impl/set/int
 scoreboard players reset *intersection.b_index
 
 # resolve {..a_compare} lambda:
-data merge storage lambda:in {resolve:{direct:{in:'six:in intersection.a[0]', out:'six:_ v.intersection.a_compare'}}}
+data merge storage lambda:in {resolve:{direct:{in:'six:in intersection.a[0]', out:'six:_ v.intersection.a_compare.compare'}}}
 data modify storage lambda:in resolve.lambda set from storage six:in intersection.by
 function lambda:1/resolve
 data modify storage six:_ v.intersection.a_comparegen set from storage lambda:out resolve.result
