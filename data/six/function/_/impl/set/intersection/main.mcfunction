@@ -12,11 +12,11 @@
 
 data merge storage six:out {intersection:{a:[], b:[]}}
 
-# goto preserved branch:
-execute if data storage six:in intersection{ordered:true} run return run function six:_/impl/set/intersection/ordered/do
-
 # goto direct branch:
 execute unless data storage six:in intersection.by run return run function six:_/impl/set/intersection/direct/do
+
+# goto preserved branch:
+execute if data storage six:in intersection{ordered:true} run return run function six:_/impl/set/intersection/ordered/do
 
 # <ordered> == false, <by> specified branch :
 

@@ -6,7 +6,7 @@
 data modify storage six:_ v.intersection.a_item.value set from storage six:in intersection.a[-1]
 
 # find matches:
-function six:_/impl/set/intersection/get_matches with storage six:_ v.intersection
+function six:_/impl/set/intersection/direct/get_matches with storage six:_ v.intersection
 
 # ensure equality:
 execute if data storage six:_ v.intersection.matches[0] run function six:_/impl/set/intersection/each_match
