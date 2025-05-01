@@ -14,12 +14,12 @@
 # if <by> is specified, uses the result of <by> on each element to compare equality.
 #- >a< and >b< contain the original elements from their respective input set.
 #-- (thus their length will be equal.)
-# if <ordered>: preserves original order, prioritizing left-most elements.
+# if <ordered>: preserves original order of elements in <a> and <b>, prioritizing left-most elements.
 #--------------------
 # 1.
 #--------------------
-# if <by> is unspecified (direct equality comparison), >a< and >b< will be identical.
-# best performance is achieved if the length of <a> is <= to the length of <b>.
+# if <by> is unspecified (direct equality comparison), >a< and >b< will hold identical elements (but not necessarily be in the same order).
+# best performance is achieved if length of <a> is <= length of <b>.
 #--------------------
 
 data merge storage six:out {intersection:{a:[], b:[]}}
