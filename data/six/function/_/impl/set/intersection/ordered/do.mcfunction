@@ -18,7 +18,7 @@ data modify storage six:_ v.intersection.b_buffer set from storage six:out initi
 
 # generate {..b_comp}
 scoreboard players set *intersection.b_index _six 0
-execute if data storage six:in intersection.b[0] run function six:_/impl/set/intersection/gen_b_comp
+execute if data storage six:in intersection.b[0] run function six:_/impl/set/intersection/ordered/gen_b_comp
 scoreboard players reset *intersection.b_index
 
 # resolve {..a_comparegen} lambda:
@@ -28,7 +28,7 @@ function lambda:1/resolve
 data modify storage six:_ v.intersection.a_comparegen set from storage lambda:out resolve.result
 
 # each a:
-execute if data storage six:in intersection.a[0] run function six:_/impl/set/intersection/each
+execute if data storage six:in intersection.a[0] run function six:_/impl/set/intersection/ordered/each
 
 # set {@out b} from {..b_buffer}
 execute if data storage six:_ v.intersection.b_buffer[0] run function six:_/impl/set/intersection/ordered/each_b

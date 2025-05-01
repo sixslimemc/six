@@ -12,7 +12,7 @@ data modify storage six:_ v.intersection.b_buffer set from storage six:out initi
 
 # generate {..b_comp}
 scoreboard players set *intersection.b_index _six 0
-execute if data storage six:in intersection.b[0] run function six:_/impl/set/intersection/gen_b_comp
+execute if data storage six:in intersection.b[0] run function six:_/impl/set/intersection/direct/ordered/gen_b_comp
 scoreboard players reset *intersection.b_index
 
 # each a:
