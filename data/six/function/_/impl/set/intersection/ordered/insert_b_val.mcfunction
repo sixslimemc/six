@@ -3,4 +3,4 @@
 # ./each
 #--------------------
 
-$data modify storage six:_ v.intersection.b_buffer[$(index)].value set from storage six:_ v.intersection.matches[0].value
+$data modify storage six:_ v.intersection.b_comp[$(index)].include set value true

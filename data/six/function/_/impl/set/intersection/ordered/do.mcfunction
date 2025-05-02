@@ -5,11 +5,6 @@
 
 # <ordered> == true, <by> specified branch :
 
-# {..b_buffer}
-execute store result storage six:in initialize.length int 1 if data storage six:in intersection.b[]
-function six:list/initialize
-data modify storage six:_ v.intersection.b_buffer set from storage six:out initialize.result
-
 # resolve {..b_compgen} lambda:
 data merge storage lambda:in {resolve:{direct:{in:'six:in intersection.b[0]', out:'six:_ v.intersection.b_comp[-1].compare'}}}
 data modify storage lambda:in resolve.lambda set from storage six:in intersection.by
@@ -30,5 +25,5 @@ data modify storage six:_ v.intersection.a_comparegen set from storage lambda:ou
 # each a:
 execute if data storage six:in intersection.a[0] run function six:_/impl/set/intersection/ordered/each
 
-# set {@out b} from {..b_buffer}
-execute if data storage six:_ v.intersection.b_buffer[0] run function six:_/impl/set/intersection/ordered/each_b
+# gen {@out b}
+execute if data storage six:_ v.intersection.b_comp[0] run function six:_/impl/set/intersection/ordered/each_b
