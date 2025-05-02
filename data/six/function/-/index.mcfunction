@@ -6,4 +6,4 @@
 # $> op: 'set' | 'append' | 'prepend'
 #--------------------
 
-$data modify storage $(to) $(op) from storage $(items)[$(index)]
+$return run data modify storage $(to) $(op) from storage $(items)[$(index)]
