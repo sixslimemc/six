@@ -14,4 +14,4 @@ scoreboard players reset *intersection.b_index
 execute if data storage six:in intersection.a[0] run function six:_/impl/set/intersection/direct/ordered/each
 
 # set {@out b}:
-execute if data storage six:_ v.intersection.b_buffer[0] run function six:_/impl/set/intersection/ordered/each_b
+execute if data storage six:_ v.intersection.b_comp[0] run function six:_/impl/set/intersection/ordered/each_b
