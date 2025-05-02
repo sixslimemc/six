@@ -41,3 +41,4 @@ data modify storage six:_ v.difference.a_comparegen set from storage lambda:out 
 execute if data storage six:in difference.a[0] run function six:_/impl/set/difference/each
 
 # gen {@out b}
+execute if data storage six:_ v.difference.b_comp[0] run function six:_/impl/set/difference/each_b

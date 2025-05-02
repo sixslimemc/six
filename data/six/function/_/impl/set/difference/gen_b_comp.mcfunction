@@ -3,7 +3,6 @@
 # ./main
 #--------------------
 
-
 data modify storage six:_ v.difference.b_comp append value {}
 data modify storage six:_ v.difference.b_comp[-1].value set from storage six:in difference.b[-1]
 execute store result storage six:_ v.difference.b_comp[-1].index int 1 run scoreboard players get *difference.b_index _six
