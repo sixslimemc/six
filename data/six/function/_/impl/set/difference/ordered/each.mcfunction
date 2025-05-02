@@ -13,8 +13,8 @@ function six:_/impl/set/difference/get_matches with storage six:_ v.difference
 execute if data storage six:_ v.difference.matches[0] run function six:_/impl/set/difference/each_match
 
 # add to out if equal found:
-execute if score *difference.equal _six matches 1 run data modify storage six:out difference.a append from storage six:in difference.a[0]
-execute if score *difference.equal _six matches 1 run function six:_/impl/set/difference/ordered/insert_b_val with storage six:_ v.difference.matches[0]
+execute unless score *difference.equal _six matches 1 run data modify storage six:out difference.a append from storage six:in difference.a[0]
+execute if score *difference.equal _six matches 1 run function six:_/impl/set/difference/remove_b with storage six:_ v.difference.matches[0]
 
 scoreboard players reset *difference.equal _six
 

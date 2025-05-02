@@ -30,5 +30,5 @@ data modify storage six:_ v.difference.a_comparegen set from storage lambda:out 
 # each a:
 execute if data storage six:in difference.a[0] run function six:_/impl/set/difference/ordered/each
 
-# set {@out b} from {..b_buffer}
-execute if data storage six:_ v.difference.b_buffer[0] run function six:_/impl/set/difference/ordered/each_b
+# set {@out b}:
+execute if data storage six:_ v.difference.b_comp[0] run function six:_/impl/set/difference/ordered/each_b
