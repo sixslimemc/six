@@ -10,6 +10,8 @@
 # 1.
 #--------------------
 
+# TODO: make variable stack to protect from lambda interference :(
+
 data merge storage six:out {intersection:{a:[], b:[]}}
 
 # goto direct branch:
