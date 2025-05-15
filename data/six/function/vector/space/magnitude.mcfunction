@@ -11,9 +11,9 @@
 
 data remove storage six:out magnitude
 
-execute store result score *x _six run function six:_/impl/vector/space/magnitude/main
+function six:_/impl/vector/space/magnitude/main
 
 data remove storage six:_ v.magnitude
 data remove storage six:in magnitude
 
-return run scoreboard players get *x _six
+return 1
