@@ -4,6 +4,7 @@
 # ./main AS [marker]
 #--------------------
 
-$execute positioned $(xa) $(ya) $(za) run tp @s ~$(xb) ~$(yb) ~$(yz)
-execute at @s run data modify storage six:out add.result set from entity @s Pos
+data modify entity @s Pos set from storage six:in add.a
+$execute at @s run tp @s ~$(xb) ~$(yb) ~$(zb)
+data modify storage six:out add.result set from entity @s Pos
 kill @s
