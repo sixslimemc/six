@@ -1,4 +1,4 @@
-#> six : vector/space/magnitude
+#> six : vector/magnitude
 #--------------------
 # -> vector: spaceVector
 #--------------------
@@ -11,7 +11,7 @@
 
 data remove storage six:out magnitude
 
-function six:_/impl/vector/space/magnitude/main
+function six:_/impl/vector/magnitude/main
 
 data remove storage six:_ v.magnitude
 data remove storage six:in magnitude

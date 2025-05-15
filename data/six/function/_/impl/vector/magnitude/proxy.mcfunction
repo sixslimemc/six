@@ -1,4 +1,4 @@
-# IMPL > six : vector/space/magnitude
+# IMPL > six : vector/magnitude
 # proxy
 #--------------------
 # ./main AS [item_display]
