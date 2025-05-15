@@ -10,6 +10,8 @@
 # 1.
 #--------------------
 
+# literally just a shorthand for calling 'direction_of' then 'toward'
+
 data remove storage six:out rescale
 
 data modify storage six:in direction_of.vector set from storage six:in rescale.vector
