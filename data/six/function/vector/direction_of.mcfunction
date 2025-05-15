@@ -2,7 +2,7 @@
 #--------------------
 # -> vector: spaceVector
 #--------------------
-# <- result: rotationVector
+# <- result: rotation
 #--------------------
 # TODO: description
 #--------------------

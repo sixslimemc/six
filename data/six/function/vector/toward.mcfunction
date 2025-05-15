@@ -1,6 +1,6 @@
 #> six : vector/toward
 #--------------------
-# -> rotation: rotationVector
+# -> rotation: rotation
 # => magnitude: number = 1
 #--------------------
 # <- result: spaceVector

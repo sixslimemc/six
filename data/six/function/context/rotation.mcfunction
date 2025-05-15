@@ -2,7 +2,7 @@
 #--------------------
 # .
 #--------------------
-# <- result: rotationVector
+# <- result: rotation
 #--------------------
 # gets the rotation of the current execution context.
 #--------------------
