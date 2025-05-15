@@ -1,0 +1,10 @@
+# IMPL > six : vector/rotation/point
+# proxy
+#--------------------
+# ./main AS [marker]
+#--------------------
+
+$execute positioned 0 0 0 rotated $(xrot) $(yrot) run tp @s ^ ^ ^$(magnitude)
+execute at @s run data modify storage six:out point.result set from entity @s Pos
+kill @s
+
