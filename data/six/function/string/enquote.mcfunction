@@ -6,7 +6,7 @@
 #--------------------
 # TODO: description
 #--------------------
-# 1: 
+# 1.
 #--------------------
 
 data remove storage six:out enquote
