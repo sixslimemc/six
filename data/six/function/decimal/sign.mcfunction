@@ -13,7 +13,7 @@
 
 data remove storage six:out sign
 
-execute store result score *x _six summon marker run function six:_/impl/decimal/sign/main with storage six:in sign
+execute store result score *x _six summon marker run function six:_/impl/decimal/sign/main
 
 data remove storage six:in sign
 
