@@ -1,7 +1,8 @@
 # IMPL > six : decimal/min
 # main AS [marker]
 
-$execute positioned 0 $(a) 0 run tp @s ~ ~ ~ facing 0 $(b) 0
+data modify entity @s Pos[1] set from storage six:in min.a
+$execute at @s run tp @s ~ ~ ~ facing ~ $(b) ~
 execute store result score *x _six run data get entity @s Rotation[1]
 kill @s
 
