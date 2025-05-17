@@ -10,14 +10,14 @@
 # 1.
 #--------------------
 
-# literally just a shorthand for calling 'direction_of' then 'cast'
+# literally just a shorthand for calling 'direction' then 'cast'
 
 data remove storage six:out rescale
 
-data modify storage six:in direction_of.vector set from storage six:in rescale.vector
-function six:vector/direction_of
+data modify storage six:in direction.vector set from storage six:in rescale.vector
+function six:vector/direction
 
-data modify storage six:in cast.rotation set from storage six:out direction_of.result
+data modify storage six:in cast.rotation set from storage six:out direction.result
 data modify storage six:in cast.magnitude set from storage six:in rescale.magnitude
 function six:vector/cast
 
