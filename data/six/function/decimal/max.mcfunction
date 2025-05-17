@@ -7,8 +7,8 @@
 #--------------------
 # TODO: description
 #--------------------
-# 1: <a> is larger than <b>; >result< == <a>
-# -1: <b> is larger than <a>; >result< == <b>
+# 1: <a> is greater than <b>; >result< == <a>
+# -1: <b> is greater than <a>; >result< == <b>
 # 0: <a> and <b> are equal.
 #--------------------
 
