@@ -4,7 +4,7 @@
 # ./main AS [marker]
 #--------------------
 
-$execute positioned 0 0 0 align xyz rotated $(xrot) $(yrot) run tp @s ^ ^ ^$(magnitude)
+function six:_/impl/vector/cast/tp with storage six:in cast
 data modify storage six:out cast.result set from entity @s Pos
 kill @s
 
