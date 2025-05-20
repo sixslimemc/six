@@ -1,14 +1,14 @@
 #> six : decimal/sign
 #--------------------
-# -> number: number
+# -> value: number
 #--------------------
 # .
 #--------------------
 # TODO: description
 #--------------------
-# 1: <number> is positive.
-# -1: <number> is negative.
-# 0: <number> is 0.
+# 1: <value> is positive.
+# -1: <value> is negative.
+# 0: <value> is 0.
 #--------------------
 
 data remove storage six:out sign
