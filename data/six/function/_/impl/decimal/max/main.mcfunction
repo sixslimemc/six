@@ -2,7 +2,7 @@
 # main AS [marker]
 
 data modify entity @s Pos[1] set from storage six:in max.a
-$execute at @s run tp @s ~ ~ ~ facing ~ $(b) ~
+function six:_/impl/decimal/max/tp with storage six:in max
 execute store result score *x _six run data get entity @s Rotation[1]
 kill @s
 
