@@ -4,4 +4,4 @@
 # ./each AS [marker]
 #--------------------
 
-$execute at @s run tp @s ~ ~$(this_number) ~
+$execute at @s run tp @s ~ ~$(this_value) ~

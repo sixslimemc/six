@@ -1,13 +1,13 @@
 #> six : decimal/sum
 #--------------------
-# -> numbers[]: number
+# -> values[]: number
 #--------------------
 # <- result: number
 #--------------------
 # TODO: description
 #--------------------
-# 1: <numbers> contained at least 1 element.
-# 0: <numbers> was empty; >result< = 0.
+# 1: <values> contained at least 1 element.
+# 0: <values> was empty; >result< = 0.
 #--------------------
 
 data remove storage six:out sum
