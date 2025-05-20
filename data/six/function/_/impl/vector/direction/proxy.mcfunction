@@ -4,6 +4,6 @@
 # ./main AS [marker]
 #--------------------
 
-$execute facing ~$(x) ~$(y) ~$(z) run tp @s ~ ~ ~ ~ ~
+function six:_/impl/vector/direction/proxy with storage six:_ v.direction
 execute at @s run data modify storage six:out direction.result set from entity @s Rotation
 kill @s
