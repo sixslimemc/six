@@ -1,6 +1,6 @@
 #> six : decimal/negate
 #--------------------
-# -> number: number
+# -> value: number
 #--------------------
 # <- result: number
 #--------------------
@@ -11,7 +11,7 @@
 
 data remove storage six:out negate
 
-execute summon marker run function six:_/impl/decimal/negate/main with storage six:in negate
+execute summon marker run function six:_/impl/decimal/negate/main
 
 data remove storage six:in negate
 

@@ -14,7 +14,7 @@
 
 data remove storage six:out subtract
 
-data modify storage six:in negate.number set from storage six:in subtract.b
+data modify storage six:in negate.value set from storage six:in subtract.b
 function six:decimal/negate
 
 data modify storage six:in sum.numbers append from storage six:in subtract.a
