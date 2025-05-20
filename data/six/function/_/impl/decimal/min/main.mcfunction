@@ -2,7 +2,7 @@
 # main AS [marker]
 
 data modify entity @s Pos[1] set from storage six:in min.a
-$execute at @s run tp @s ~ ~ ~ facing ~ $(b) ~
+function six:_/impl/decimal/min/tp with storage six:in min
 execute store result score *x _six run data get entity @s Rotation[1]
 kill @s
 
