@@ -22,5 +22,7 @@ data remove storage six:_ v.find_char
 data remove storage six:in find_char
 scoreboard players reset *find_char.i
 scoreboard players reset *find_char.length
+scoreboard players reset *find_char.do_escape
+scoreboard players reset *find_char.escaped
 
 return run scoreboard players get *x _six
