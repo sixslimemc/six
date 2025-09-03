@@ -22,6 +22,7 @@ scoreboard players set *quote_index.result _six -1
 
 scoreboard players set *quote_index.istart _six 1
 scoreboard players set *quote_index.iend _six 9
+scoreboard players set *quote_index.escape _six -1
 execute store result storage six:_ v.quote_index.istart int 1 run scoreboard players get *quote_index.istart _six
 execute store result storage six:_ v.quote_index.iend int 1 run scoreboard players get *quote_index.iend _six
 function six:_/util/quote_index/bufloop with storage six:_ v.quote_index
