@@ -32,5 +32,6 @@ execute if score *quote_index.result _six matches -1 run return 0
 scoreboard players operation *quote_index.result _six += *quote_index.istart _six
 
 data remove storage six:_ v.quote_index
+data remove storage six:_ util.quote_index
 
 return run scoreboard players get *quote_index.result _six
