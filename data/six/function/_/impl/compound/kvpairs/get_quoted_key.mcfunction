@@ -16,5 +16,5 @@ function six:-/mline/2 with storage six:_ x
 
 
 execute store result score *kvpairs.consumelength _six run data get storage six:_ v.kvpairs.entry.key
-# end-quote plus ':'
-scoreboard players add *kvpairs.consumelength _six 2
+# quotes plus ':'
+scoreboard players add *kvpairs.consumelength _six 3
