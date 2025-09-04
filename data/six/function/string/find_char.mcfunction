@@ -14,6 +14,8 @@
 # -2: <char> was not exactly 1 character
 #--------------------
 
+execute unless data storage six:in find_char.do_inner_escape run data modify storage six:in find_char.do_inner_escape set value false
+
 data remove storage six:out find_char
 
 execute store result score *x _six run function six:_/impl/string/find_char/main
