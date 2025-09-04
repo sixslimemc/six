@@ -1,5 +1,5 @@
 # IMPL > six:compound/kvpairs
-# get_unquoted_key
+# get_quoted_key
 #--------------------
 # ./bufloop
 #--------------------
