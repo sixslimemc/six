@@ -1,13 +1,13 @@
 {
     "values": [
         "#minecraft:rails",
+        "#minecraft:chains",
         "#six:minecraft/amethyst_clusters",
         "#minecraft:campfires",
         "#minecraft:candles",
         "minecraft:barrier",
         "minecraft:big_dripleaf",
         "minecraft:calibrated_sculk_sensor",
-        "minecraft:chain",
         "minecraft:chest",
         "minecraft:conduit",
         "minecraft:copper_grate",
