@@ -1,10 +1,11 @@
 #> six : player/get_next_ammo
+# AS [player]
 #--------------------
 # -> amount: int
-# => types[]: 'bow' | 'crossbow'
-# => custom_items[]: $itemID
+# => types[]: 'bow' | 'crossbow' = []
+# => custom_items[]: $itemID = []
 #--------------------
-# <- result[]: {item: item, amount: int}
+# <- result[]: {item: item, amount: int, slotPath: $itemSlotPath}
 #--------------------
 # TODO: description
 #--------------------

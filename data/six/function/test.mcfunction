@@ -1,6 +1,5 @@
 
-data modify storage six:in kvpairs.compound set from entity @s SelectedItem
+data merge storage six:in {get_next_ammo:{amount:10, types:["crossbow"]}}
+function six:player/get_next_ammo
 # DEBUG:
-tellraw @a ["IN", {'storage':'six:in', 'nbt':'kvpairs.compound'}]
-function six:compound/kvpairs
-tellraw @a ["OUT", {'storage':'six:out', 'nbt':'kvpairs.result'}]
+tellraw @a ["out: ", {'storage':'six:out', 'nbt':'get_next_ammo.result'}]
