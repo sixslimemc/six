@@ -42,3 +42,6 @@ data modify storage slimecore:in manifest.pack.dependencies set value []
 data modify storage slimecore:in manifest.pack.is_library set value false
 
 function slimecore:api/manifest
+
+# DEBUG
+function six:_/test_manifests
