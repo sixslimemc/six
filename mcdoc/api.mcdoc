@@ -1,0 +1,23 @@
+
+dispatch minecraft:storage[six:in] to struct In {
+    [any]: any
+}
+dispatch minecraft:storage[six:out] to struct Out {
+    [any]: any
+}
+
+dispatch minecraft:storage[six:api] to struct Api {
+
+}
+
+dispatch minecraft:storage[six:hook] to struct Hook {
+
+}
+
+dispatch minecraft:storage[six:abstract/in] to struct AbstractIn {
+
+}
+
+dispatch minecraft:storage[six:abstract/out] to struct AbstractOut {
+
+}

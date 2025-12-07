@@ -1,0 +1,12 @@
+
+inject struct ::six::mcdoc::api::In {
+    FUNCTION_NAME: struct In {
+        
+    }
+}
+
+inject struct ::six::mcdoc::api::Out {
+    FUNCTION_NAME: struct Out {
+
+    }
+}
