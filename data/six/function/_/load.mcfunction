@@ -3,7 +3,7 @@
 
 scoreboard objectives add _six dummy
 
-
+say six loaded
 
 # DEBUG
 scoreboard players reset *init _six
