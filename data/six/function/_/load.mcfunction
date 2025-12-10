@@ -3,6 +3,7 @@
 
 scoreboard objectives add _six dummy
 
+execute if score *o _ohenuhent matches 1 run say hi
 say six loaded
 
 # DEBUG
