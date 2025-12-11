@@ -1,4 +1,4 @@
-#> six:_/uninstall
+#> six:_/sc/uninstall
 # @ UNINSTALL
 
 # TODO

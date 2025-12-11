@@ -1,4 +1,4 @@
-#> six:_/disable
+#> six:_/sc/disable
 # @ DISABLE
 
 # TODO

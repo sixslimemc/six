@@ -1,0 +1,2 @@
+
+type Uuid = #[uuid] [int] @ 4

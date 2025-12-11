@@ -1,4 +1,4 @@
-#> six:_/manifest
+#> six:_/sc/manifest
 # @ MANIFEST
 
 data modify storage slimecore:in manifest.pack set value {}
