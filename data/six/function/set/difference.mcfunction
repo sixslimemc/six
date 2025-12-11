@@ -2,13 +2,13 @@
 # ^ A
 # ^ B
 #--------------------
-# -> a[]: ^A
-# -> b[]: ^B
-# -> by? Lambda<^A | ^B, any>
-# => ordered? = false
+# -> a: [^A]
+# -> b: [^B]
+# -> by?: lambda::Lambda1<(^A | ^B), any>
+# => ordered?: boolean = false
 #--------------------
-# <- a[]: ^A
-# <- b[]: ^B
+# <- a: [^A]
+# <- b: [^B]
 #--------------------
 # gets the set of elements unique to <a>/<b>.
 # if <by> is specified, uses the result of <by> on each element to compare equality.
