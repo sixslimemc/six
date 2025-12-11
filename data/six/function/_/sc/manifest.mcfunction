@@ -39,6 +39,6 @@ data modify storage slimecore:in manifest.pack.dependencies set value []
 # data modify storage slimecore:in manifest.pack.dependencies[-1].download.url set value "TODO"
 # data modify storage slimecore:in manifest.pack.dependencies[-1].download.version set value {major:0, minor:1, patch:0}
 
-data modify storage slimecore:in manifest.pack.is_library set value false
+data modify storage slimecore:in manifest.pack.is_library set value true
 
 function slimecore:api/manifest
