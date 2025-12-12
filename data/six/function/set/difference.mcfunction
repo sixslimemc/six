@@ -5,7 +5,7 @@
 # -> a: [^A]
 # -> b: [^B]
 # -> by?: lambda::Lambda1<(^A | ^B), any>
-# => ordered?: boolean = false
+# -> ordered?: boolean = false
 #--------------------
 # <- a: [^A]
 # <- b: [^B]

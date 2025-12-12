@@ -1,14 +1,5 @@
-#> six:_/impl/set/difference/main
-#--------------------
-# -> a[]: any
-# -> b[]: any
-#--------------------
-# <- result[]: any
-#--------------------
-# # TODO: description
-#--------------------
-# 1.
-#--------------------
+# IMPL > six:_/impl/set/difference
+# main
 
 # goto direct branch:
 execute unless data storage six:in difference.by run return run function six:_/impl/set/difference/direct/do

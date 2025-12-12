@@ -1,0 +1,9 @@
+
+type In<T> = struct {
+    length: int,
+    value: T
+}
+
+type Out<T> = struct {
+    result: [T]
+}
