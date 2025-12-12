@@ -1,2 +1,5 @@
 
 type Uuid = #[uuid] [int] @ 4
+/// TODO: define strictly
+type Guuid = string
+type Command = #[command] string
