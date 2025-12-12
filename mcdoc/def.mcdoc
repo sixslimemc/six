@@ -3,3 +3,9 @@ type Uuid = #[uuid] [int] @ 4
 /// TODO: define strictly
 type Guuid = string
 type Command = #[command] string
+/// matches: `data get storage foo:bar array[$(.)] 1`
+type ListIndexer = string
+/// matches: `data get storage foo:bar baz.$(.) 1`
+type StructPath = string
+/// matches: `data modify storage foo:bar baz $(.) value true`
+type NbtOperation = string
