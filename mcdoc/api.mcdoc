@@ -1,5 +1,0 @@
-
-
-dispatch minecraft:storage[six:api] to struct Api {
-
-}

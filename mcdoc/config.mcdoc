@@ -1,4 +1,0 @@
-
-dispatch minecraft:storage[six:config] to struct Config {
-
-}
