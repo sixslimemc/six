@@ -17,8 +17,6 @@ data modify storage slimecore:in manifest.pack.display.links.info set value "htt
 # data modify storage slimecore:in manifest.pack.display.links.versions set value "TODO"
 
 data modify storage slimecore:in manifest.pack.entrypoints set value []
-data modify storage slimecore:in manifest.pack.entrypoints append value {id:"tick"}
-
 data modify storage slimecore:in manifest.pack.preload_entrypoints set value []
 data modify storage slimecore:in manifest.pack.abstract_declarations set value []
 data modify storage slimecore:in manifest.pack.abstract_implementations set value []
