@@ -6,7 +6,8 @@ struct In {
     /// The character to find.
     char: string @ 1,
     /// Whether or not escaped quote scopes should be accounted for (impacts performance).
-    do_inner_escape: boolean
+    /// Default: false
+    do_inner_escape?: boolean
 }
 
 struct Out {}
