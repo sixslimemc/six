@@ -1,9 +1,11 @@
 
 dispatch minecraft:storage[six:in] to struct In {
     difference: super::function::set::difference::In<any, any>,
+    guuid: super::function::uuid::guuid::In,
     initialize: super::function::list::initialize::In,
 }
 dispatch minecraft:storage[six:out] to struct Out {
     initialize: super::function::list::initialize::Out<any>,
     difference: super::function::set::difference::Out<any, any>,
+    guuid: super::function::uuid::guuid::Out,
 }

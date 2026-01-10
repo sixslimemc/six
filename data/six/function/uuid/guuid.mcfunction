@@ -1,15 +1,6 @@
 #> six : uuid/guuid
-#--------------------
-# -> uuid: Uuid
-#--------------------
-# <- result: Guuid
-#--------------------
-# TODO: description
-#--------------------
-# 1.
-#--------------------
 
-data modify storage six:out guuid set value {}
+data remove storage six:out guuid
 
 function six:_/impl/uuid/guuid/main
 

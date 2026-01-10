@@ -10,3 +10,7 @@ type ListIndexer = string
 type StructPath = string
 /// matches: `data modify storage foo:bar baz $(.) value true`
 type NbtOperation = string
+
+struct AnyStruct {
+    [string]?: any
+}

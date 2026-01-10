@@ -1,0 +1,14 @@
+// converts a <uuid> into a guuid.
+
+use super::super::super::def::Guuid
+use super::super::super::def::Uuid
+
+struct In {
+    uuid: Uuid
+}
+
+struct Out {
+    result: Guuid
+}
+
+type Return = 1
