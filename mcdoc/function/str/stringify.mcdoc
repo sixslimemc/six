@@ -1,0 +1,11 @@
+// Resolves <object> as a string (using string json resolution).
+
+struct In {
+    object: any
+}
+
+struct Out {
+    result: string
+}
+
+type Return = 1

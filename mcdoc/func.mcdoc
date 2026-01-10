@@ -3,9 +3,15 @@ dispatch minecraft:storage[six:in] to struct In {
     difference: super::function::set::difference::In<any, any>,
     guuid: super::function::uuid::guuid::In,
     initialize: super::function::list::initialize::In,
+    find_char: super::function::str::find_char::In,
+    stringify: super::function::str::stringify::In,
+    enquote: super::function::str::enquote::In,
 }
 dispatch minecraft:storage[six:out] to struct Out {
     initialize: super::function::list::initialize::Out<any>,
     difference: super::function::set::difference::Out<any, any>,
     guuid: super::function::uuid::guuid::Out,
+    find_char: super::function::str::find_char::Out,
+    stringify: super::function::str::stringify::Out,
+    enquote: super::function::str::enquote::Out,
 }

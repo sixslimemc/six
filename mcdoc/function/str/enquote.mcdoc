@@ -1,0 +1,12 @@
+// Puts quotes around <string>.
+// Uses the quote-type (single/double) that would appear around <string> in-game when displaying it.
+
+struct In {
+    str: string,
+}
+
+struct Out {
+    result: string
+}
+
+type Return = 1
