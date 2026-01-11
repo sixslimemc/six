@@ -1,0 +1,16 @@
+use super::super::super::def::AnyStruct
+
+struct In {
+    struc: AnyStruct,
+}
+
+struct Out {
+    result: [KeyValuePair],
+}
+
+struct KeyValuePair {
+    key: string,
+    value: any,
+}
+
+type Return = 1

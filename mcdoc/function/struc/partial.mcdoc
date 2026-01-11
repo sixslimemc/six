@@ -1,0 +1,17 @@
+use super::super::super::def::StructPath
+use super::super::super::def::AnyStruct
+
+struct In {
+    struc: AnyStruct,
+    get?: PartialStructSpecifier,
+}
+
+struct Out {
+    result: AnyStruct,
+}
+struct PartialStructSpecifier {
+    only?: [StructPath],
+    without?: [StructPath],
+}
+
+type Return = 1
