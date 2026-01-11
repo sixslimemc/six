@@ -1,5 +1,6 @@
 
 dispatch minecraft:storage[six:in] to struct In {
+    intersection: super::function::set::intersection::In<any, any>,
     distinct: super::function::set::distinct::In<any>,
     difference: super::function::set::difference::In<any, any>,
     guuid: super::function::uuid::guuid::In,
@@ -10,6 +11,7 @@ dispatch minecraft:storage[six:in] to struct In {
     map: super::function::list::map::In<any, any>,
 }
 dispatch minecraft:storage[six:out] to struct Out {
+    intersection: super::function::set::intersection::Out<any, any>,
     initialize: super::function::list::initialize::Out<any>,
     distinct: super::function::set::distinct::Out<any>,
     difference: super::function::set::difference::Out<any, any>,

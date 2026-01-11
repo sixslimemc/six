@@ -1,8 +1,10 @@
 
+use super::super::super::def::Lambda1
+
 type In<A, B> = struct {
     a: [A],
     b: [B],
-    by?: ::lambda::mcdoc::def::Lambda1<(A | B), any>,
+    by?: Lambda1<(A | B), any>,
     ordered?: boolean
 }
 

@@ -1,0 +1,17 @@
+
+use super::super::super::def::Lambda1
+
+type In<Ta, Tb> = struct {
+    a: [Ta],
+    b: [Tb],
+    by?: Lambda1<(Ta | Tb), any>,
+    /// Default: false
+    ordered?: boolean,
+}
+
+type Out<Ta, Tb> = struct {
+    a: [Ta],
+    b: [Tb],
+}
+
+type Return = 1
