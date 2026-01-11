@@ -10,11 +10,16 @@ type ListIndexer = string
 type StructPath = string
 /// matches: `data modify storage foo:bar baz $(.) value true`
 type NbtOperation = string
+/// matches: `item modify entity @s $() []`
+type ItemSlotPath = string
+/// matches: `execute if items entity @s $() *`
+type ItemSlotPathCheck = string
 /// Does not include longs.
 type Number = (int | byte | float | double | short)
 type SpaceVector = [double] @ 3
 type RotationVector = [float] @ 2
 type Text = ::java::util::text::Text
+type SingleItem = ::java::world::item::SingleItem
 struct AnyStruct {
     [string]?: any
 }

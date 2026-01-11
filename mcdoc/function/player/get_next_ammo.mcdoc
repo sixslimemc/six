@@ -1,0 +1,27 @@
+// AS [player]
+
+use super::super::super::def::SingleItem
+use super::super::super::def::ItemSlotPath
+
+struct In {
+    amount: int @ 0..,
+    types: [AmmoType],
+    custom_items: [#[id="item"] string]
+}
+
+struct Out {
+    result: [AmmoItemEntry],
+}
+
+struct AmmoItemEntry {
+    item: SingleItem,
+    amount: int,
+    slot_path: ItemSlotPath,
+}
+enum(string) AmmoType {
+    Bow = "bow",
+    Crosssbow = "crossbow",
+}
+
+/// Count of ammo items found.
+type Return = int @ 0..
