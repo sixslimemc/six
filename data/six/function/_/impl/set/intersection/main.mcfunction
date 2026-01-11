@@ -1,14 +1,4 @@
 #> six:_/impl/set/intersection/main
-#--------------------
-# -> a[]: any
-# -> b[]: any
-#--------------------
-# <- result[]: any
-#--------------------
-# # TODO: description
-#--------------------
-# 1.
-#--------------------
 
 # TODO: make variable stack to protect from lambda interference :(
 
