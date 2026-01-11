@@ -1,0 +1,17 @@
+// Applies a <transform> function over all <items>.
+
+use super::super::super::def::Lambda1
+
+type In<T, R> = struct {
+    items: [T],
+    /// If unspecified, will be the identity function (<items> does not change).
+    transform?: Lambda1,
+}
+
+type Out<T, R> = struct {
+    result: [R],
+}
+
+/// Sum of all return codes by <transform> when applied to <items>.
+/// 0 if <transform> is unspecified.
+type Return = int

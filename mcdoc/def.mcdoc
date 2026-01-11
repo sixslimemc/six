@@ -1,4 +1,5 @@
 
+
 type Uuid = #[uuid] [int] @ 4
 type Selector = #[selector] string
 /// TODO: define strictly
@@ -14,3 +15,7 @@ type NbtOperation = string
 struct AnyStruct {
     [string]?: any
 }
+
+type Lambda1<TIn, TOut> = ::lambda::mcdoc::def::Lambda1<TIn, TOut>
+type Lambda2<TIn1, TIn2, TOut> = ::lambda::mcdoc::def::Lambda2<TIn1, TIn2, TOut>
+type Lambda3<TIn1, TIn2, TIn3, TOut> = ::lambda::mcdoc::def::Lambda3<TIn1, TIn2, TIn3, TOut>
