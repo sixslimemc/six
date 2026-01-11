@@ -1,0 +1,13 @@
+
+type In<T> = struct {
+    list: [T],
+}
+
+type Out<T> = struct {
+    result: [IndexedValue<T>],
+}
+
+type IndexedValue<T> = struct {
+    index: int @ 0..,
+    value: T,
+}

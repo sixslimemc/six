@@ -1,16 +1,18 @@
 
 dispatch minecraft:storage[six:in] to struct In {
     intersection: super::function::set::intersection::In<any, any>,
+    enumerate: super::function::list::enumerate::In<any>,
     distinct: super::function::set::distinct::In<any>,
     difference: super::function::set::difference::In<any, any>,
     guuid: super::function::uuid::guuid::In,
-    initialize: super::function::list::initialize::In,
+    initialize: super::function::list::initialize::In<any>,
     find_char: super::function::str::find_char::In,
     stringify: super::function::str::stringify::In,
     enquote: super::function::str::enquote::In,
     map: super::function::list::map::In<any, any>,
 }
 dispatch minecraft:storage[six:out] to struct Out {
+    enumerate: super::function::list::enumerate::Out<any>,
     intersection: super::function::set::intersection::Out<any, any>,
     initialize: super::function::list::initialize::Out<any>,
     distinct: super::function::set::distinct::Out<any>,
