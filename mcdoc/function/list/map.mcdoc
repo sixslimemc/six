@@ -3,9 +3,9 @@
 use super::super::super::def::Lambda1
 
 type In<T, R> = struct {
-    items: [T],
+    list: [T],
     /// If unspecified, will be the identity function (*items* does not change).
-    transform?: Lambda1,
+    transform?: Lambda1<T, R>,
 }
 
 type Out<T, R> = struct {
