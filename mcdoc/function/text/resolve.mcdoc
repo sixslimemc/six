@@ -1,0 +1,12 @@
+
+use super::super::super::def::Text
+
+struct In {
+    text: Text
+}
+
+struct Out {
+    result: Text
+}
+
+type Return = 1

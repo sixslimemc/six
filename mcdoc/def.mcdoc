@@ -15,7 +15,7 @@ type NbtOperation = string
 type Number = (int | byte | float | double | short)
 type SpaceVector = [double] @ 3
 type RotationVector = [float] @ 2
-
+type Text = ::java::util::text::Text
 struct AnyStruct {
     [string]?: any
 }

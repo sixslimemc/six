@@ -33,6 +33,7 @@ dispatch minecraft:storage[six:in] to struct In {
     get_direction: super::function::vector::get_direction::In,
     get_magnitude: super::function::vector::get_magnitude::In,
     rescale: super::function::vector::rescale::In,
+    resolve: super::function::text::resolve::In,
 
 }
 dispatch minecraft:storage[six:out] to struct Out {
@@ -69,4 +70,5 @@ dispatch minecraft:storage[six:out] to struct Out {
     position: super::function::context::position::Out,
     rotation: super::function::context::rotation::Out,
     equal: super::function::anything::equal::Out,
+    resolve: super::function::text::resolve::Out,
 }
