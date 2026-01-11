@@ -1,5 +1,4 @@
 
-
 type Uuid = #[uuid] [int] @ 4
 type Selector = #[selector] string
 /// TODO: define strictly
