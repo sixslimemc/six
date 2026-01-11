@@ -1,4 +1,4 @@
-// converts a <uuid> into a guuid.
+// converts a *uuid* into a guuid.
 
 use super::super::super::def::Guuid
 use super::super::super::def::Uuid

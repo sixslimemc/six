@@ -12,7 +12,7 @@ execute if data storage six:in difference{ordered:true} run return run function 
 # resolve {..b_comp} lambda:
 data merge storage lambda:in {resolve:{direct:{in:'six:in difference.b[-1]', out:'six:_ v.difference.b_comp[-1].compare'}}}
 data modify storage lambda:in resolve.lambda set from storage six:in difference.by
-function lambda:1/resolve
+function lambda:a/resolve
 data modify storage six:_ v.difference.b_compgen set from storage lambda:out resolve.result
 
 # generate {..b_comp}
@@ -23,7 +23,7 @@ scoreboard players reset *difference.b_index
 # resolve {..a_compare} lambda:
 data merge storage lambda:in {resolve:{direct:{in:'six:in difference.a[-1]', out:'six:_ v.difference.a_compare.compare'}}}
 data modify storage lambda:in resolve.lambda set from storage six:in difference.by
-function lambda:1/resolve
+function lambda:a/resolve
 data modify storage six:_ v.difference.a_comparegen set from storage lambda:out resolve.result
 
 # each a:

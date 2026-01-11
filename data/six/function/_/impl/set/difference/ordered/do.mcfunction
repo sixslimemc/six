@@ -13,7 +13,7 @@ data modify storage six:_ v.difference.b_buffer set from storage six:out initial
 # resolve {..b_compgen} lambda:
 data merge storage lambda:in {resolve:{direct:{in:'six:in difference.b[0]', out:'six:_ v.difference.b_comp[-1].compare'}}}
 data modify storage lambda:in resolve.lambda set from storage six:in difference.by
-function lambda:1/resolve
+function lambda:a/resolve
 data modify storage six:_ v.difference.b_compgen set from storage lambda:out resolve.result
 
 # generate {..b_comp}
@@ -24,7 +24,7 @@ scoreboard players reset *difference.b_index
 # resolve {..a_comparegen} lambda:
 data merge storage lambda:in {resolve:{direct:{in:'six:in difference.a[0]', out:'six:_ v.difference.a_compare.compare'}}}
 data modify storage lambda:in resolve.lambda set from storage six:in difference.by
-function lambda:1/resolve
+function lambda:a/resolve
 data modify storage six:_ v.difference.a_comparegen set from storage lambda:out resolve.result
 
 # each a:

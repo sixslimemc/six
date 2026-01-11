@@ -1,5 +1,5 @@
-// Puts quotes around <string>.
-// Uses the quote-type (single/double) that would appear around <string> in-game when displaying it.
+// Puts quotes around *str*.
+// Uses the quote-type (single/double) that would appear around *str* in-game when displaying it.
 
 struct In {
     str: string,

@@ -1,4 +1,4 @@
-// Finds the index of the first appearance of <char> in <string>.
+// Finds the index of the first appearance of *char* in *str*.
 
 struct In {
     /// The string to search in.
@@ -12,7 +12,7 @@ struct In {
 
 struct Out {}
 
-/// 0..: <char> was found at this index in <string>.
-/// -1: <string> did not contain <char>.
-/// -2: <char> was not exactly 1 character.
+/// 0..: *char* was found at this index in *str*.
+/// -1: *str* did not contain *char*.
+/// -2: *char* was not exactly 1 character.
 type Return = int @ -2..
