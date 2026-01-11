@@ -1,0 +1,13 @@
+
+use super::super::super::def::RotationVector
+
+struct In {
+    origin: RotationVector,
+    rotate: RotationVector,
+}
+
+struct Out {
+    result: RotationVector,
+}
+
+type Return = 1

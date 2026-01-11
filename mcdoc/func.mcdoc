@@ -35,7 +35,7 @@ dispatch minecraft:storage[six:in] to struct In {
     rescale: super::function::vector::rescale::In,
     resolve: super::function::text::resolve::In,
     resolve_selector: super::function::uuid::resolve_selector::In,
-
+    true_rotate: super::function::vector::true_rotate::In,
 }
 dispatch minecraft:storage[six:out] to struct Out {
     enumerate: super::function::list::enumerate::Out<any>,
@@ -72,5 +72,6 @@ dispatch minecraft:storage[six:out] to struct Out {
     rotation: super::function::context::rotation::Out,
     equal: super::function::anything::equal::Out,
     resolve: super::function::text::resolve::Out,
+    true_rotate: super::function::vector::true_rotate::Out,
     resolve_selector: super::function::uuid::resolve_selector::Out,
 }
