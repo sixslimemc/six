@@ -1,0 +1,13 @@
+
+struct In {
+    a?: any,
+    b?: any,
+}
+
+struct Out {}
+
+enum(int) Return {
+    /// Equal or both null.
+    Equal = 1,
+    NotEqual = 0,
+}

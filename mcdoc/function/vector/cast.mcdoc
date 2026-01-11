@@ -1,0 +1,16 @@
+
+use super::super::super::def::SpaceVector
+use super::super::super::def::Number
+use super::super::super::def::RotationVector
+
+struct In {
+    rotation: RotationVector,
+    /// Default: 1
+    magnitude?: Number,
+}
+
+struct Out {
+    result: RotationVector
+}
+
+type Return = 1

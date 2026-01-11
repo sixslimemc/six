@@ -1,0 +1,12 @@
+
+use super::super::super::def::SpaceVector
+
+struct In {
+    vector: SpaceVector
+}
+
+struct Out {
+    result: SpaceVector
+}
+
+type Return = 1

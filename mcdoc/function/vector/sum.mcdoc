@@ -1,0 +1,15 @@
+
+use super::super::super::def::SpaceVector
+
+struct In {
+    vectors: [SpaceVector]
+}
+
+struct Out {
+    result: SpaceVector
+}
+
+enum(int) Return {
+    Success = 1,
+    NoVectors = 0,
+}

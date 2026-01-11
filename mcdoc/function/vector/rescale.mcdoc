@@ -1,0 +1,14 @@
+
+use super::super::super::def::SpaceVector
+use super::super::super::def::RotationVector
+
+struct In {
+    vector: SpaceVector,
+    magnitude?: SpaceVector,
+}
+
+struct Out {
+    result: SpaceVector
+}
+
+type Return = 1

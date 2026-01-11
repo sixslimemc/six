@@ -1,0 +1,13 @@
+
+use super::super::super::def::SpaceVector
+use super::super::super::def::RotationVector
+
+struct In {
+    vector: SpaceVector
+}
+
+struct Out {
+    result: float
+}
+
+type Return = 1

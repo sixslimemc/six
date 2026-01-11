@@ -11,14 +11,29 @@ dispatch minecraft:storage[six:in] to struct In {
     enquote: super::function::str::enquote::In,
     struct_wrap: super::function::list::struct_wrap::In<any>,
     map: super::function::list::map::In<any, any>,
-    sum: super::function::decimal::sum::In,
-    negate: super::function::decimal::negate::In,
     sign: super::function::decimal::sign::In,
-    subtract: super::function::decimal::subtract::In,
     max: super::function::decimal::max::In,
     min: super::function::decimal::min::In,
     position: super::function::context::position::In,
     rotation: super::function::context::rotation::In,
+    equal: super::function::anything::equal::In,
+    sum: (
+        super::function::decimal::sum::In |
+        super::function::vector::sum::In |
+        ),
+    subtract: (
+        super::function::decimal::subtract::In |
+        super::function::vector::subtract::In |
+        ),
+    negate: (
+        super::function::decimal::negate::In |
+        super::function::vector::negate::In |
+        ),
+    cast: super::function::vector::cast::In,
+    get_direction: super::function::vector::get_direction::In,
+    get_magnitude: super::function::vector::get_magnitude::In,
+    rescale: super::function::vector::rescale::In,
+
 }
 dispatch minecraft:storage[six:out] to struct Out {
     enumerate: super::function::list::enumerate::Out<any>,
@@ -32,12 +47,26 @@ dispatch minecraft:storage[six:out] to struct Out {
     enquote: super::function::str::enquote::Out,
     struct_wrap: super::function::list::struct_wrap::Out<any>,
     map: super::function::list::map::Out<any, any>,
-    sum: super::function::decimal::sum::Out,
-    negate: super::function::decimal::negate::Out,
+    sum: (
+        super::function::decimal::sum::Out |
+        super::function::vector::sum::Out |
+        ),
+    subtract: (
+        super::function::decimal::subtract::Out |
+        super::function::vector::subtract::Out |
+        ),
+    negate: (
+        super::function::decimal::negate::Out |
+        super::function::vector::negate::Out |
+        ),
+    cast: super::function::vector::cast::Out,
+    get_direction: super::function::vector::get_direction::Out,
+    get_magnitude: super::function::vector::get_magnitude::Out,
+    rescale: super::function::vector::rescale::Out,
     sign: super::function::decimal::sign::Out,
-    subtract: super::function::decimal::subtract::Out,
     max: super::function::decimal::max::Out,
     min: super::function::decimal::min::Out,
     position: super::function::context::position::Out,
     rotation: super::function::context::rotation::Out,
+    equal: super::function::anything::equal::Out,
 }
