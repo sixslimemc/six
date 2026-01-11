@@ -1,0 +1,12 @@
+use super::super::super::def::Number
+
+struct In {
+    a: Number,
+    b: Number,
+}
+
+struct Out {
+    result: Number,
+}
+
+type Return = 1

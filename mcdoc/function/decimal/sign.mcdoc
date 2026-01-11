@@ -1,0 +1,13 @@
+use super::super::super::def::Number
+
+struct In {
+    value: Number
+}
+
+struct Out {}
+
+enum(int) Return {
+    Positive = 1,
+    Negative = -1,
+    Zero = 0,
+}

@@ -11,6 +11,8 @@ type ListIndexer = string
 type StructPath = string
 /// matches: `data modify storage foo:bar baz $(.) value true`
 type NbtOperation = string
+/// Does not include longs.
+type Number = (int | byte | float | double | short)
 
 struct AnyStruct {
     [string]?: any

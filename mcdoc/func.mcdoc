@@ -11,6 +11,12 @@ dispatch minecraft:storage[six:in] to struct In {
     enquote: super::function::str::enquote::In,
     struct_wrap: super::function::list::struct_wrap::In<any>,
     map: super::function::list::map::In<any, any>,
+    sum: super::function::decimal::sum::In,
+    negate: super::function::decimal::negate::In,
+    sign: super::function::decimal::sign::In,
+    subtract: super::function::decimal::subtract::In,
+    max: super::function::decimal::max::In,
+    min: super::function::decimal::min::In,
 }
 dispatch minecraft:storage[six:out] to struct Out {
     enumerate: super::function::list::enumerate::Out<any>,
@@ -24,4 +30,10 @@ dispatch minecraft:storage[six:out] to struct Out {
     enquote: super::function::str::enquote::Out,
     struct_wrap: super::function::list::struct_wrap::Out<any>,
     map: super::function::list::map::Out<any, any>,
+    sum: super::function::decimal::sum::Out,
+    negate: super::function::decimal::negate::Out,
+    sign: super::function::decimal::sign::Out,
+    subtract: super::function::decimal::subtract::Out,
+    max: super::function::decimal::max::Out,
+    min: super::function::decimal::min::Out,
 }

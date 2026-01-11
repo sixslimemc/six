@@ -1,0 +1,14 @@
+use super::super::super::def::Number
+
+struct In {
+    values: [Number],
+}
+
+struct Out {
+    result: Number,
+}
+
+enum(int) Return {
+    Success = 1,
+    NoValues = 0,
+}
