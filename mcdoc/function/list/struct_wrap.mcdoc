@@ -1,0 +1,15 @@
+
+use super::super::super::def::StructPath
+
+type In<T> = struct {
+    list: [T],
+    path: StructPath,
+}
+
+type Out<T> = struct {
+    result: ResultStruct<T>,
+}
+
+type ResultStruct<T> = struct {
+    [StructPath] : (ResultStruct<T> | T)
+}

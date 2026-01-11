@@ -9,6 +9,7 @@ dispatch minecraft:storage[six:in] to struct In {
     find_char: super::function::str::find_char::In,
     stringify: super::function::str::stringify::In,
     enquote: super::function::str::enquote::In,
+    struct_wrap: super::function::list::struct_wrap::In<any>,
     map: super::function::list::map::In<any, any>,
 }
 dispatch minecraft:storage[six:out] to struct Out {
@@ -21,5 +22,6 @@ dispatch minecraft:storage[six:out] to struct Out {
     find_char: super::function::str::find_char::Out,
     stringify: super::function::str::stringify::Out,
     enquote: super::function::str::enquote::Out,
+    struct_wrap: super::function::list::struct_wrap::Out<any>,
     map: super::function::list::map::Out<any, any>,
 }
