@@ -1,0 +1,7 @@
+use super::super::super::def::RotationVector
+
+struct In {}
+struct Out {
+    result: RotationVector
+}
+type Return = 1

@@ -17,6 +17,8 @@ dispatch minecraft:storage[six:in] to struct In {
     subtract: super::function::decimal::subtract::In,
     max: super::function::decimal::max::In,
     min: super::function::decimal::min::In,
+    position: super::function::context::position::In,
+    rotation: super::function::context::rotation::In,
 }
 dispatch minecraft:storage[six:out] to struct Out {
     enumerate: super::function::list::enumerate::Out<any>,
@@ -36,4 +38,6 @@ dispatch minecraft:storage[six:out] to struct Out {
     subtract: super::function::decimal::subtract::Out,
     max: super::function::decimal::max::Out,
     min: super::function::decimal::min::Out,
+    position: super::function::context::position::Out,
+    rotation: super::function::context::rotation::Out,
 }
