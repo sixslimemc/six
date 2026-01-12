@@ -1,6 +1,10 @@
 #> six:_/sc/uninstall
 # @ UNINSTALL
 
-# TODO
+scoreboard objectives remove _six
+data remove storage six:_ x
+data remove storage six:_ t
+data remove storage six:_ v
+data remove storage six:_ u
 
-tellraw @a [{color:red, text:"[!!!] Uninstallation for 'six' has not yet been implemented!"}]
+data remove storage six:data const
