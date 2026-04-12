@@ -11,6 +11,8 @@ struct Out {
 struct KeyValuePair {
     key: string,
     value: any,
+    /// 'key' can safely be surrounded with this type of quote when used in a macro.
+    key_quote_type: ("'" | "\"")
 }
 
 type Return = 1
