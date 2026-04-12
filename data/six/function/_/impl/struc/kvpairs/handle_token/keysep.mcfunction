@@ -4,6 +4,7 @@
 # ./bufloop.1
 #--------------------
 
+say hi
 # remove ':':
 data remove storage six:_ v.kvpairs.buffer[-1]
 
