@@ -21,7 +21,7 @@ function six:_/impl/struc/kvpairs/get_value with storage six:_ v.kvpairs.result_
 
 data modify storage six:out kvpairs.result append from storage six:_ v.kvpairs.result_entry
 
-# count and skip elements that are part of the key's value:
+# count and skip tokens that are part of the key's value:
 data modify entity @s text set value {plain:true, storage:"six:_", nbt:"v.kvpairs.result_entry.value"}
 execute store result score *x _six if data entity @s text.extra[]
 scoreboard players operation *kvpairs.key_index _six += *x _six
