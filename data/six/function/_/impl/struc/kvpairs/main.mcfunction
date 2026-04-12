@@ -13,3 +13,5 @@ scoreboard players set *kvpairs.brace_scope _six 0
 scoreboard players set *kvpairs.bracket_scope _six 0
 
 execute if data storage six:_ v.kvpairs.buffer[0] run function six:_/impl/struc/kvpairs/bufloop
+
+return 1
