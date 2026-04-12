@@ -3,7 +3,6 @@
 
 scoreboard objectives add _six dummy
 
-say six
 # consts
 data remove storage six:data const
 
