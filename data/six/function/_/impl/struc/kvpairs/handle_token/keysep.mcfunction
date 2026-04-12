@@ -16,8 +16,6 @@ execute if score *x _six matches 0 run data modify storage six:_ v.kvpairs.resul
 execute if score *x _six matches 1 run data modify storage six:_ v.kvpairs.result_entry.key set from storage six:_ v.kvpairs.key_token.extra[0]
 execute if score *x _six matches 1 run data modify storage six:_ v.kvpairs.result_entry.key_quote_type set from storage six:_ v.kvpairs.key_token.text
 
-# DEBUG:
-tellraw @a ["KEY: ", {'storage':'six:_', 'nbt':'v.kvpairs.result_entry'}]
 function six:_/impl/struc/kvpairs/add_key with storage six:_ v.kvpairs.result_entry
 
 # remove the key, "", and " ":
