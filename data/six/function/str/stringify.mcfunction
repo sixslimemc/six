@@ -1,5 +1,7 @@
 #> six : str/stringify
 
+# TODO: update to 26.1
+
 data remove storage six:out stringify
 
 execute summon text_display run function six:_/impl/str/stringify/main

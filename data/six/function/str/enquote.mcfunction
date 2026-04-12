@@ -1,5 +1,7 @@
 # six : str/enquote
 
+# TODO: update to 26.1
+
 data remove storage six:out enquote
 
 execute store result score *x _six run function six:_/impl/str/enquote/main
