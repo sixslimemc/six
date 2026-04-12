@@ -26,10 +26,8 @@ data modify entity @s text set value {plain:true, storage:"six:_", nbt:"v.kvpair
 execute store result score *x _six if data entity @s text.extra[]
 scoreboard players operation *kvpairs.key_index _six += *x _six
 
-# skip ':', ' ', ',', ' ', and '' tokens:
+# go to next key, always 6 tokens away (':', ' ', ',', ' ', '' and current key):
 scoreboard players add *kvpairs.key_index _six 6
-
-# return if no more tokens:
 execute unless score *kvpairs.key_index _six < *kvpairs.token_count _six run return 0
 
 execute store result storage six:_ v.kvpairs.key_index int 1 run scoreboard players get *kvpairs.key_index _six
