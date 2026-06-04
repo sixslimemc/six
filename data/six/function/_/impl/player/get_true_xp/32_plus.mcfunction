@@ -17,4 +17,5 @@ scoreboard players operation *y _six += *get_true_xp.level_half _six
 scoreboard players operation *x _six -= *y _six
 scoreboard players add *x _six 2220
 
+scoreboard players operation *x _six += *get_true_xp.points _six
 return run scoreboard players get *x _six
