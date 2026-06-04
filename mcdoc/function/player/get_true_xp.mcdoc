@@ -8,9 +8,12 @@ struct Out {
     result: int,
 }
 
-enum(int) Return {
-    Success = 1,
-    /// Returned if >result< would be bigger than the 32-bit int limit.
-    /// >result< will be equal to the 32-bit int limit.
-    TooLarge = 0,
+type Return = (ReturnSuccess | ReturnError)
+/// Equals >result<.
+type ReturnSuccess = int @ 0..
+
+enum(int) ReturnError {
+    /// true xp is larger than the integer limit.
+    /// (>result< will be equal to the integer limit if this is returned.)
+    TooLarge = -1,
 }

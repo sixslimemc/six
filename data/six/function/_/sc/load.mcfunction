@@ -14,6 +14,7 @@ data modify storage six:data const.int_limit set value {max:2147483647, min:-214
 # private consts
 scoreboard players set *256 _six 256
 scoreboard players set *1 _six 1
+scoreboard players set *2 _six 2
 scoreboard players set *-1 _six -1
 scoreboard players set *0 _six 0
 scoreboard players set *max _six 2147483647
