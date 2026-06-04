@@ -1,0 +1,16 @@
+// AS [player]
+
+struct In {
+
+}
+
+struct Out {
+    result: int,
+}
+
+enum(int) Return {
+    Success = 1,
+    /// Returned if >result< would be bigger than the 32-bit int limit.
+    /// >result< will be equal to the 32-bit int limit.
+    TooLarge = 0,
+}
