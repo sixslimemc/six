@@ -3,6 +3,8 @@
 
 scoreboard objectives add _six dummy
 
+execute store success score *installed.varchunk _six if data storage slimecore:data build.packs[{author_id:"sixslime", pack_id:"varchunk"}]
+
 # consts
 data remove storage six:data const
 
@@ -20,5 +22,8 @@ scoreboard players set *0 _six 0
 scoreboard players set *max _six 2147483647
 scoreboard players set *min _six -2147483648
 
-
 execute unless score *init _six matches 1 run function six:_/sc/init
+
+# statics:
+scoreboard players operation *statics _six = *installed.varchunk _six
+execute if score *statics _six matches 1 run function six:_/static_entities
