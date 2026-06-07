@@ -1,5 +1,5 @@
 # IMPL > six : decimal/max
-# main AS [marker]
+# main
 
 data modify entity @s Pos[1] set from storage six:in max.a
 function six:_/impl/decimal/max/tp with storage six:in max

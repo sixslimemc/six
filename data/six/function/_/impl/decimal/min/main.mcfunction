@@ -1,5 +1,5 @@
 # IMPL > six : decimal/min
-# main AS [marker]
+# main
 
 data modify entity @s Pos[1] set from storage six:in min.a
 function six:_/impl/decimal/min/tp with storage six:in min
