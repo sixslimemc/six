@@ -12,4 +12,5 @@ data modify storage six:_ v.true_rotate.z set from storage six:out cast.result[2
 data modify storage six:_ v.true_rotate.xfrom set from storage six:in true_rotate.origin[0]
 data modify storage six:_ v.true_rotate.yfrom set from storage six:in true_rotate.origin[1]
 
-execute summon marker run function six:_/impl/vector/true_rotate/proxy
+execute if score *statics _six matches 1 as 358a978f-e286-48d3-bcde-81106c020d2f at @s run function six:_/impl/vector/true_rotate/proxy_static
+execute unless score *statics _six matches 1 summon marker run function six:_/impl/vector/true_rotate/proxy
