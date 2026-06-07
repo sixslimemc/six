@@ -2,7 +2,7 @@
 
 data remove storage six:out cast
 
-execute unless data storage six:in cast.magnitude run data merge storage six:in {cast:{magnitude:1}}
+execute unless data storage six:in cast.magnitude run data modify storage six:in cast.magnitude set value 1
 
 function six:_/impl/vector/cast/main
 
