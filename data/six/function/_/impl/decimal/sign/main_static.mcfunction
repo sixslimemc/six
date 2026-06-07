@@ -6,6 +6,8 @@ tp @s ~ ~ ~ facing ~ 0.0 ~
 
 execute store result score *x _six run data get entity @s Rotation[1]
 
+tp 0 0 0
+
 execute if score *x _six matches 90 run return 1
 execute if score *x _six matches -90 run return -1
 return 0

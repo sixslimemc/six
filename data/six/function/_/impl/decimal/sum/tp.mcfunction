@@ -1,7 +1,7 @@
 # IMPL > six : vector/sum
-# proxy
+# tp
 #--------------------
-# ./each AS [marker]
+# ./each
 #--------------------
 
 $execute at @s positioned ~ ~$(this_value) ~ run tp @s ~ ~ ~
