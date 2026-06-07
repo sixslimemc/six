@@ -4,7 +4,7 @@
 data modify entity @s Pos[1] set from storage six:in min.a
 function six:_/impl/decimal/min/tp with storage six:in min
 execute store result score *x _six run data get entity @s Rotation[1]
-tp 0 0 0
+tp 0.0 0.0 0.0
 
 execute if score *x _six matches -90 run return 1
 execute if score *x _six matches 90 run return -1
