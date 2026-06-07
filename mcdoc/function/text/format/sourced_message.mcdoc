@@ -1,9 +1,8 @@
-
 use ::java::util::text::Text
 
-
 struct In {
-    text: Text
+    lines: [Text],
+    source: string,
 }
 
 struct Out {

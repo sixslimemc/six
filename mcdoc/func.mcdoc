@@ -40,6 +40,7 @@ dispatch minecraft:storage[six:in] to struct In {
     partial: super::function::struc::partial::In,
     kvpairs: super::function::struc::kvpairs::In,
     get_true_xp: super::function::player::get_true_xp::In,
+    sourced_message: super::function::text::format::sourced_message::In,
 }
 dispatch minecraft:storage[six:out] to struct Out {
     enumerate: super::function::list::enumerate::Out<any>,
@@ -82,4 +83,5 @@ dispatch minecraft:storage[six:out] to struct Out {
     partial: super::function::struc::partial::Out,
     kvpairs: super::function::struc::kvpairs::Out,
     get_true_xp: super::function::player::get_true_xp::Out,
+    sourced_message: super::function::text::format::sourced_message::Out,
 }
