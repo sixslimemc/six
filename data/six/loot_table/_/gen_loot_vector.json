@@ -1,0 +1,23 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:structure_void",
+					"functions": [
+						{
+							"function": "minecraft:set_custom_data",
+							"tag": {
+								"_six": {
+									"gen_loot_vector": true
+								}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

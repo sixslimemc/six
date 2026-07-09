@@ -1,0 +1,13 @@
+{
+	"condition": "minecraft:entity_properties",
+	"entity": "this",
+	"predicate": {
+		"minecraft:components": {
+			"minecraft:custom_data": {
+				"_six": {
+					"gen_loot_vector": true
+				}
+			}
+		}
+	}
+}
