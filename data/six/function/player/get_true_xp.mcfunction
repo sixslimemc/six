@@ -12,6 +12,7 @@ scoreboard players reset *get_true_xp.level _six
 scoreboard players reset *get_true_xp.points _six
 scoreboard players reset *get_true_xp.level_half _six
 scoreboard players reset *get_true_xp.level_sqhalf _six
+scoreboard players reset *get_true_xp.level_squared _six
 
 execute if score *x _six matches -1 run data modify storage six:out get_true_xp.result set from storage six:data const.int_limit.max
 
