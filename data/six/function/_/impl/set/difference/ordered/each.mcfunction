@@ -3,8 +3,11 @@
 # ./do
 #--------------------
 
-# gen {..a_compare}:
-function lambda:-/1/execute with storage six:_ eval[-1].v.a_comparegen
+# lambda:
+data modify storage six:api difference append value {value:{}}
+data modify storage six:api difference[-1].value set from storage six:_ eval[-1].in.a[0]
+function six:_/impl/set/difference/ordered/each.1 with storage six:_ eval[-1].in
+data remove storage six:api difference[-1]
 
 # find matches:
 function six:_/impl/set/difference/get_matches with storage six:_ eval[-1].v

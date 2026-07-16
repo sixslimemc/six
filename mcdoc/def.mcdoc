@@ -23,14 +23,19 @@ struct AnyStruct {
     [string]?: any
 }
 
+struct LambdaStackEntry {
+    var?: any,
+}
 type TransformerCommand = Command
 type TransformerApi<TIn, TOut> = struct {
+    ...LambdaStackEntry,
     in: TIn,
     out?: TOut,
 }
 
 type SetEqualityComparerCommand = Command
 type SetEqualityComparerApi<T> = struct {
+    ...LambdaStackEntry,
     value: T,
     compare?: any
 }
