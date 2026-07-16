@@ -1,0 +1,31 @@
+
+struct VariableRegister {
+    [string]: any
+}
+dispatch minecraft:storage[six:_] to struct {
+    /// top level
+    t: VariableRegister,
+    /// impl
+    v: VariableRegister,
+    /// util
+    u: VariableRegister,
+    /// abstract
+    a: VariableRegister,
+    /// in-scope temp
+    x: VariableRegister,
+    // data
+    data: struct PrivateData {
+        
+    },
+    // constants
+    const: struct Constants {
+        
+    },
+    eval: [any],
+}
+dispatch minecraft:storage[six:_/in] to struct {
+    [any]: any
+}
+dispatch minecraft:storage[six:_/out] to struct {
+    [any]: any
+}

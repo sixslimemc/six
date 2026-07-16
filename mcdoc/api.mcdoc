@@ -1,0 +1,4 @@
+
+dispatch minecraft:storage[six:api] to struct Api {
+    map: super::function::list::map::Api<any, any>,
+}

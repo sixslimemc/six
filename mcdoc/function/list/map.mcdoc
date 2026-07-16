@@ -1,17 +1,18 @@
 // Applies a *transform* function over all *items*.
 
-use super::super::super::def::Lambda1
-
-type In<T, R> = struct {
-    list: [T],
+type In<TIn, TOut> = struct {
+    list: [TIn],
     /// If unspecified, will be the identity function (*items* does not change).
-    transform?: Lambda1<T, R>,
+    transform?: #[command] string,
 }
 
-type Out<T, R> = struct {
-    result: [R],
+type Out<TIn, TOut> = struct {
+    result: [TOut],
 }
 
-/// Sum of all return codes by **transform** when applied to *items*.
-/// 0 if *transform* is unspecified.
-type Return = int
+type Return = 1
+
+type Api<TIn, TOut> = struct {
+    in: TIn,
+    out: TOut,
+}

@@ -3,10 +3,7 @@
 # ./main
 #--------------------
 
-data modify storage six:out map.result prepend value {}
+function six:_/impl/list/map/transform with storage six:_ eval[-1].in
 
-execute store result score *x _six run function lambda:-/1/execute with storage six:_ v.map.lambdar
-scoreboard players operation *map.return _six += *x _six
-
-data remove storage six:in map.list[-1]
-execute if data storage six:in map.list[0] run function six:_/impl/list/map/each
+data remove storage six:_ eval[-1].in.list[0]
+execute if data storage six:_ eval[-1].in.list[0] run function six:_/impl/list/map/each
