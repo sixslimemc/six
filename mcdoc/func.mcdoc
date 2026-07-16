@@ -1,9 +1,8 @@
 
 dispatch minecraft:storage[six:in] to struct In {
-    intersection: super::function::set::intersection::In<any, any>,
     enumerate: super::function::list::enumerate::In<any>,
     distinct: super::function::set::distinct::In<any>,
-    difference: super::function::set::difference::In<any, any>,
+    compare: super::function::set::compare::In<any, any>,
     guuid: super::function::uuid::guuid::In,
     initialize: super::function::list::initialize::In<any>,
     find_char: super::function::str::find_char::In,
@@ -45,10 +44,9 @@ dispatch minecraft:storage[six:in] to struct In {
 }
 dispatch minecraft:storage[six:out] to struct Out {
     enumerate: super::function::list::enumerate::Out<any>,
-    intersection: super::function::set::intersection::Out<any, any>,
     initialize: super::function::list::initialize::Out<any>,
     distinct: super::function::set::distinct::Out<any>,
-    difference: super::function::set::difference::Out<any, any>,
+    compare: super::function::set::compare::Out<any, any>,
     guuid: super::function::uuid::guuid::Out,
     find_char: super::function::str::find_char::Out,
     stringify: super::function::str::stringify::Out,

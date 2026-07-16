@@ -37,7 +37,7 @@ type SetEqualityComparerCommand = Command
 type SetEqualityComparerApi<T> = struct {
     ...LambdaStackEntry,
     value: T,
-    compare?: any
+    equality_key?: any
 }
 
 type Lambda1<TIn, TOut> = ::lambda::mcdoc::def::Lambda1<TIn, TOut>

@@ -10,8 +10,12 @@ type In<Ta, Tb> = struct {
 }
 
 type Out<Ta, Tb> = struct {
+    difference: ComparisonResult<Ta, Tb>,
+    intersection: ComparisonResult<Ta, Tb>,
+}
+
+type ComparisonResult<Ta, Tb> = struct {
     a: [Ta],
     b: [Tb],
 }
-
 type Api<Ta, Tb> = SetEqualityComparerApi<(Ta | Tb)>
