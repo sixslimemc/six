@@ -4,7 +4,6 @@
 # ../direct/ordered/do
 #--------------------
 
-
 execute unless data storage six:_ eval[-1].v.b_comp[-1].exclude run data modify storage six:_ eval[-1].out.b prepend from storage six:_ eval[-1].v.b_comp[-1].value
 
 data remove storage six:_ eval[-1].v.b_comp[-1]
