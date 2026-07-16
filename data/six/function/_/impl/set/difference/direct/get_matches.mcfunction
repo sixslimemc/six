@@ -3,5 +3,5 @@
 # ./each
 #--------------------
 
-data remove storage six:_ v.difference.matches
-$data modify storage six:_ v.difference.matches append from storage six:_ v.difference.b_comp[$(a_item)]
+data remove storage six:_ eval[-1].v.matches
+$data modify storage six:_ eval[-1].v.matches append from storage six:_ eval[-1].v.b_comp[$(a_item)]

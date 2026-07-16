@@ -20,11 +20,15 @@
 # best performance is achieved if length of <a> is <= length of <b>.
 #--------------------
 
-data modify storage six:out difference set value {a:[], b:[]}
+data remove storage six:out difference
+
+data modify storage six:_ eval append value {in:{}, out:{a:[], b:[]}}
+data modify storage six:_ eval[-1].in set from storage six:in difference
+data remove storage six:in difference
 
 function six:_/impl/set/difference/main
 
-data remove storage six:_ v.difference
-data remove storage six:in difference
+data modify storage six:out difference set from storage six:_ eval[-1].out
+data remove storage six:_ eval[-1]
 
 return 1
