@@ -1,4 +1,7 @@
 
 dispatch minecraft:storage[six:api] to struct Api {
     map: super::function::list::map::Api<any, any>,
+    difference: super::function::set::difference::Api<any, any>,
+    intersection: super::function::set::intersection::Api<any, any>,
+    distinct: super::function::set::distinct::Api<any>,
 }

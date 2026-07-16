@@ -1,11 +1,12 @@
 // Removes duplicates from *items*, returning a set.
 
-use super::super::super::def::Lambda1
+use super::super::super::def::SetEqualityComparerApi
+use super::super::super::def::SetEqualityComparerCommand
 
 type In<T> = struct {
     items: [T],
     // Use the result of this lambda on each element to compare equality.
-    by?: Lambda1<T, any>,
+    by?: SetEqualityComparerCommand,
     /// If true, preserve *items* order and prioritize first/left-most elements.
     /// Default: false
     ordered?: boolean,
@@ -14,6 +15,8 @@ type In<T> = struct {
 type Out<T> = struct {
     result: [T]
 }
+
+type Api<T> = SetEqualityComparerApi<T>
 
 /// Count of duplicates removed.
 type Return = int @ 0..

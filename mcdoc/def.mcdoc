@@ -23,6 +23,18 @@ struct AnyStruct {
     [string]?: any
 }
 
+type TransformerCommand = Command
+type TransformerApi<TIn, TOut> = struct {
+    in: TIn,
+    out?: TOut,
+}
+
+type SetEqualityComparerCommand = Command
+type SetEqualityComparerApi<T> = struct {
+    value: T,
+    compare?: any
+}
+
 type Lambda1<TIn, TOut> = ::lambda::mcdoc::def::Lambda1<TIn, TOut>
 type Lambda2<TIn1, TIn2, TOut> = ::lambda::mcdoc::def::Lambda2<TIn1, TIn2, TOut>
 type Lambda3<TIn1, TIn2, TIn3, TOut> = ::lambda::mcdoc::def::Lambda3<TIn1, TIn2, TIn3, TOut>

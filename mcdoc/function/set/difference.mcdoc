@@ -1,14 +1,17 @@
 
-use super::super::super::def::Lambda1
+use super::super::super::def::SetEqualityComparerApi
+use super::super::super::def::SetEqualityComparerCommand
 
-type In<A, B> = struct {
-    a: [A],
-    b: [B],
-    by?: Lambda1<(A | B), any>,
+type In<Ta, Tb> = struct {
+    a: [Ta],
+    b: [Tb],
+    by?: SetEqualityComparerCommand,
     ordered?: boolean
 }
 
-type Out<A, B> = struct {
-    a: [A],
-    b: [B],
+type Out<Ta, Tb> = struct {
+    a: [Ta],
+    b: [Tb],
 }
+
+type Api<Ta, Tb> = SetEqualityComparerApi<(Ta | Tb)>

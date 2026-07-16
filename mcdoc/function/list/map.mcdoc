@@ -1,9 +1,12 @@
 // Applies a *transform* function over all *items*.
 
+use super::super::super::def::TransformerApi
+use super::super::super::def::TransformerCommand
+
 type In<TIn, TOut> = struct {
     list: [TIn],
     /// If unspecified, will be the identity function (*items* does not change).
-    transform?: #[command] string,
+    transform?: TransformerCommand,
 }
 
 type Out<TIn, TOut> = struct {
@@ -12,7 +15,4 @@ type Out<TIn, TOut> = struct {
 
 type Return = 1
 
-type Api<TIn, TOut> = struct {
-    in: TIn,
-    out: TOut,
-}
+type Api<TIn, TOut> = TransformerApi<TIn, TOut>
