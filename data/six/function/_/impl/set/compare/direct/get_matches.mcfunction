@@ -1,4 +1,4 @@
-#> six:_/impl/set/difference/direct/get_matches
+#> six:_/impl/set/compare/direct/get_matches
 #--------------------
 # ./each
 #--------------------

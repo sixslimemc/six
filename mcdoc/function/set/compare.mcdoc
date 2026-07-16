@@ -6,6 +6,7 @@ type In<Ta, Tb> = struct {
     a: [Ta],
     b: [Tb],
     by?: SetEqualityComparerCommand,
+    // if true, preserves original order of elements in <a> and <b>, prioritizing left-most elements.
     ordered?: boolean
 }
 

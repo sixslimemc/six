@@ -1,4 +1,4 @@
-#> six:_/impl/set/difference/remove_b
+#> six:_/impl/set/compare/remove_b
 #--------------------
 # ./each
 # ./ordered/each
