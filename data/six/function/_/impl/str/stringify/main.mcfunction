@@ -16,6 +16,7 @@ execute if score *stringify.quote_success _six matches 1 run return 1
 
 # ~ nuclear text concat:
 
+say hi
 data modify entity @s text set value {storage:'six:in', nbt:'stringify.object', plain:true}
 data modify storage six:_ v.stringify.buffer set from entity @s text
 
