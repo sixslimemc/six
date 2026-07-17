@@ -6,7 +6,7 @@
 execute if score *statics _six matches 0 run kill @s
 
 # get {..buffer}:
-data modify entity @s text set value {plain:true, storage:"six:in", nbt:"concat.str_parts"}
+data modify entity @s text set value {plain:true, storage:"six:in", nbt:"concat.parts"}
 data modify storage six:_ v.concat.buffer set from entity @s text.extra
 
 # remove "]":

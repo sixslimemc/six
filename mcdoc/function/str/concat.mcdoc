@@ -1,6 +1,6 @@
 
 struct In {
-    str_parts: [string],
+    parts: [string],
 }
 
 struct Out {
