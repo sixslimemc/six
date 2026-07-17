@@ -27,9 +27,6 @@ execute if data storage six:_ v.stringify.text[0] run data modify storage six:_ 
 data modify storage six:_ v.stringify.concat set value []
 execute if data storage six:_ v.stringify.buffer[0] run function six:_/impl/str/stringify/buffer/loop
 
-# DEBUG:
-tellraw @a ["concat: ", {'storage':'six:_', 'nbt':'v.stringify.concat'}]
-
 data modify storage six:in concat.parts set from storage six:_ v.stringify.concat
 function six:str/concat
 data modify storage six:out stringify.result set from storage six:out concat.result
