@@ -25,3 +25,5 @@ execute if data storage six:_ v.stringify.buffer[0] run function six:_/impl/str/
 data modify storage six:in concat.parts set from storage six:_ v.stringify.concat
 function six:str/concat
 data modify storage six:out stringify.result set from storage six:out concat.result
+
+return 1

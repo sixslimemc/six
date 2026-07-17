@@ -1,15 +1,11 @@
 # IMPL > six : str/enquote
+# main AS [text display]
+execute if score *statics _six matches 0 run kill @s
 
-data modify storage six:in stringify.object.s set from storage six:in enquote.str
-function six:str/stringify
+data modify storage six:_ v.enquote.ptext.key set from storage six:in enquote.str
+data modify entity @s text set value {storage:"six:_", nbt:"v.enquote.ptext", plain:true}
 
-# y = end_index;
-execute store result score *y _six run data get storage six:out stringify.result
-# -1 to exclude '}'
-scoreboard players remove *y _six 1
-
-# start index is 3 to exclude '{s:'
-data modify storage six:_ v.enquote.start_index set value 3
-execute store result storage six:_ v.enquote.end_index int 1 run scoreboard players get *y _six
-
-function six:_/impl/str/enquote/get_quoted with storage six:_ v.enquote
+data modify storage six:_ v.enquote.text set from entity @s text
+data modify storage six:_ v.enquote.quote set from storage six:_ v.enquote.text.extra[5]
+data modify storage six:_ v.enquote.string set from storage six:_ v.enquote.text.extra[6]
+function six:_/impl/str/enquote/set with storage six:_ v.enquote
