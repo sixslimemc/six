@@ -1,0 +1,10 @@
+
+struct In {
+    strings: [string],
+}
+
+struct Out {
+    result: string,
+}
+
+type Return = 1
