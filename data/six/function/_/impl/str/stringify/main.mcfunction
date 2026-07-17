@@ -16,8 +16,13 @@ execute if score *stringify.quote_success _six matches 1 run return 1
 
 # ~ nuclear text concat:
 
+# init {..buffer}:
 data modify entity @s text set value {storage:'six:in', nbt:'stringify.object', plain:true}
-data modify storage six:_ v.stringify.buffer set from entity @s text
+data modify storage six:_ v.stringify.text set from entity @s text
+data modify storage six:_ v.stringify.buffer set value []
+data modify storage six:_ v.stringify.buffer append from storage six:_ v.stringify.text.text
+data modify storage six:_ v.stringify.buffer append from storage six:_ v.stringify.text.extra[]
+execute if data storage six:_ v.stringify.text[0] run data modify storage six:_ v.stringify.buffer set from storage six:_ v.stringify.text
 
 data modify storage six:_ v.stringify.concat set value []
 execute if data storage six:_ v.stringify.buffer[0] run function six:_/impl/str/stringify/buffer/loop
