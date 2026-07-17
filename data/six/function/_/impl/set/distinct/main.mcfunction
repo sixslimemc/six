@@ -1,28 +1,14 @@
-#> six:_/impl/set/distinct/main
-# ^T
-#--------------------
-# -> items[]: ^T
-# => ordered: bool = false
-#--------------------
-# <- result[]: ^T
-#--------------------
-# removes duplicates from <items>, returning a set.
-# if <ordered> is true, preserves original order, prioritizing left-most elements.
-#--------------------
-# 0..: number of duplicates removed.
-#--------------------
+# IMPL > six : set/distinct
+# main
 
-scoreboard players set *distinct.removed _six 0
+# ~ double backward iteration so order automatically is preserverd
 
-# set {..compares}
-execute store success score *x _six if data storage six:in distinct.by
-execute if score *x _six matches 1 run function six:_/impl/set/distinct/map_compares
-execute if score *x _six matches 0 run data modify storage six:_ v.distinct.compares set from storage six:in distinct.items
+# gen {..entries}:
+data modify storage six:_ eval[-1].v.entries set value []
+execute if data storage six:_ eval[-1].in.items[0] run function six:_/impl/set/distinct/gen_entries/each
 
-# ASSERT: {..compares}.count == <items>.count
+# iterate {..entries}:
+data modify storage six:_ eval[-1].v.seen set value []
+execute if data storage six:_ eval[-1].v.entries[0] run function six:_/impl/set/distinct/entries/each
 
-execute store success score *x _six if data storage six:in distinct{ordered:true}
-execute if score *x _six matches 1 if data storage six:in distinct.items[0] run function six:_/impl/set/distinct/each_preserve
-execute if score *x _six matches 0 if data storage six:in distinct.items[0] run function six:_/impl/set/distinct/each
-
-return run scoreboard players get *distinct.removed _six
+return 1

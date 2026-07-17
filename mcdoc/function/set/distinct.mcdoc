@@ -1,4 +1,5 @@
 // Removes duplicates from *items*, returning a set.
+// order is preserved, left-most items prioritized.
 
 use super::super::super::def::SetEqualityComparerApi
 use super::super::super::def::SetEqualityComparerCommand
@@ -7,9 +8,6 @@ type In<T> = struct {
     items: [T],
     // Use the result of this lambda on each element to compare equality.
     by?: SetEqualityComparerCommand,
-    /// If true, preserve *items* order and prioritize first/left-most elements.
-    /// Default: false
-    ordered?: boolean,
 }
 
 type Out<T> = struct {

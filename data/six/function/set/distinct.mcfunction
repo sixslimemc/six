@@ -8,9 +8,9 @@ data remove storage six:in distinct
 
 execute store result score *x _six run function six:_/impl/set/distinct/main
 
-data modify storage six:out compare set from storage six:_ eval[-1].out
+data modify storage six:out distinct set from storage six:_ eval[-1].out
 data remove storage six:_ eval[-1]
-scoreboard players reset *distinct.removed _six
-scoreboard players reset *distinct.equal _six
+
+scoreboard players reset *distinct.found_equal
 
 return run scoreboard players get *x _six
