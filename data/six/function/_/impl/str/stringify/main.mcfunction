@@ -16,12 +16,14 @@ execute if score *stringify.quote_success _six matches 1 run return 1
 
 # ~ nuclear text concat:
 
-say hi
 data modify entity @s text set value {storage:'six:in', nbt:'stringify.object', plain:true}
 data modify storage six:_ v.stringify.buffer set from entity @s text
 
 data modify storage six:_ v.stringify.concat set value []
 execute if data storage six:_ v.stringify.buffer[0] run function six:_/impl/str/stringify/buffer/loop
+
+# DEBUG:
+tellraw @a ["concat: ", {'storage':'six:_', 'nbt':'v.stringify.concat'}]
 
 data modify storage six:in concat.parts set from storage six:_ v.stringify.concat
 function six:str/concat
