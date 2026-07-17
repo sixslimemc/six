@@ -1,7 +1,5 @@
 #> six : str/find_char
 
-# TODO: update to 26.1
-
 execute unless data storage six:in find_char.do_inner_escape run data modify storage six:in find_char.do_inner_escape set value false
 
 data remove storage six:out find_char
