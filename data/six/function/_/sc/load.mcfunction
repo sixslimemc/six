@@ -26,4 +26,5 @@ execute unless score *init _six matches 1 run function six:_/sc/init
 
 # statics:
 scoreboard players operation *statics _six = *installed.varchunk _six
+kill @e[tag=_six.static]
 execute if score *statics _six matches 1 in varchunk:chunk positioned 0 0 0 run function six:_/static_entities

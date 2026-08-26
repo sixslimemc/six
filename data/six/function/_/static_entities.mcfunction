@@ -2,7 +2,6 @@
 #--------------------
 # _/sc/load
 #--------------------
-kill @e[tag=_six.static]
 
 # marker: 358a978f-e286-48d3-bcde-81106c020d2f
 # text_display: 6bbbafcb-bcca-43f2-8528-91a6e98fa864
